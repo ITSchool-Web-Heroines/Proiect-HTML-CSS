@@ -1,75 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proiect HTML+CSS</title>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MM Atelier</title>
     <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-        }
-    </style>
-</head>
-<body>
-    <h1>Web Heroines</h1>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100rem;
+      }
+      @font-face {
+        font-family: lemonmilk;
+        src: url("font/LemonMilk.woff") format("webopenfontformat"),
+          url("font/LemonMilk.ttf") format("truetype");
+        font-variant-ligatures: none;
+      }
+      @font-face {
+        font-family: modern;
+        src: url("font/Modern.woff") format("webopenfontformat"),
+          url("font/Modern.ttf") format("truetype");
+      }
+      .banner {
+        width: 100%;
+        height: 100vh;
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .banner video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        pointer-events: none;
+      }
+      .banner .title {
+        z-index: 1;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .banner .title h1 {
+        font-family: "modern";
+        font-variant-ligatures: none;
+        margin: 0;
+        padding: 0;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: 0.065rem 0rem 0.08rem #000;
+      }
+      .banner .social-media {
+        z-index: 1;
+        position: absolute;
+        bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        filter: drop-shadow(0.065rem 0rem 0.08rem #000);
+      }
+      .sm-icon {
+        width: 2rem;
+        height: auto;
+      }
+      .logo-box {
+        margin-block: 0.5rem;
+      }
+      .logo {
+        margin: auto;
+        width: 40vw;
+        max-width: 7rem;
+        height: auto;
+        filter: drop-shadow(0.065rem 0rem 0.08rem #000);
+      }
+      .menu * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .menu .menu-item {
+        font-family: "modern";
+        font-variant-ligatures: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-shadow: 0.065rem 0rem 0.08rem #000;
+        color: #fff;
+        text-decoration: none;
+        align-items: center;
+        padding-inline: 0.5rem;
+      }
+      .logo-menu {
+        border-block-end: 0.1rem solid #fff;
+        box-shadow: 0rem 0.065rem 0.5rem #fff;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .menu {
+        display: flex;
+        margin-block-start: -0.5rem;
+        margin-block-end: 0.3rem;
+      }
+      .menu > ul {
+        display: flex;
+        gap: 1rem;
+      }
+      
+      .subtitle-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0.5rem;
+      }
+      h2.subtitle {
+        font-family: "modern";
+        font-variant-ligatures: none;
+        font-size: 1.6rem;
+        line-height: 85%;
+        text-align: justify;
+      }
+      .subtitle-image {
+        width: 15rem;
+        height: auto;
+      }
+      .content-box {
+        display: flex;
+        flex-direction: column;
+      }
+      .content-box div.content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .content h3 {
+        margin-block: 0;
+        font-family: "lemonmilk";
+        font-variant-ligatures: none;
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+      .content p {
+        font-family: "modern";
+        font-variant-ligatures: none;
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 85%;
+        margin-block: 1rem;
+        margin-inline: 0.5rem;
+      }
+      .menu-item + .sub-menu {
+        display: grid;
+        position: absolute;
+        opacity: 0;
+        gap: 0.5rem;
+        justify-items: center;
+      }
 
-    <h2>Cerințele proiectului</h2>
-    <ul>
-        <li>
-            Trebuie prezentat la sesiunea 13 (scuze dacă sunteți superstițioase)
-            Adică pe <strong>26 Iulie 2022</strong>.
-            <ol>
-                <li>
-                    În cazuri motivate, în care nu poți participa atunci, ne putem uita mai devreme.
-                </li>
-                <li>
-                    Dacă nu poți, sau dintr-un motiv sau altul nu vrei să faci proiectul, spune-mi.
-                </li>
-            </ol>
-        </li>
-        <li>
-            Cât mai curând posibil, trebuie anunțat care va fi subiectul site-ului
-            <ol>
-                <li>
-                    Dacă nu ai idei, spune și vom găsi împreună ceva ce te pasionează
-                </li>
-            </ol>
-        </li>
-        <li>
-            Construiește un site complet și funcțional
-            <ol>
-                <li>
-                    Minim 3 pagini
-                </li>
-                <li>
-                    Optimizat pentru toate dimensiunile de ecran.
-                    <br />
-                    (Bonus dacă arată bine pe mobil în landscape)
-                </li>
-                <li>Folosește corect Grid Layout și Flexbox.</li>
-                <li>Arată cât mai frumos și modern (se pot folosi alte site-uri pentru inspirație).</li>
-                <li>Codul copiat este acceptat, dar te voi întreba de el.</li>
-            </ol>
-        </li>
-        <li>
-            Codul sursă va fi disponibil pe GitHub.
-            <ol>
-                <li>
-                    Link la codul sursă trebuie postat pe #homework
-                    cu 24 de ore înainte de prezentare.
-                </li>
-            </ol>
-        </li>
-        <li>
-            Site-ul trebuie să fie accesibil pentru a fi testat.
-            <ol>
-                <li>În sesiunea 11, vom fi văzut cum se publică un site gratuit pe GitHub Pages.</li>
-                <li>Dacă vrei să publici altundeva, e OK, dar nu știu dacă te voi putea ajuta.</li>
-                <li>Codul din test trebuie să fie identic cu cel din GitHub</li>
-            </ol>
-        </li>
-    </ul>
-</body>
+      .sub-menu a {
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-shadow: 0.065rem 0rem 0.08rem #000;
+        color: #fff;
+        font-family: "modern";
+        text-decoration: none;
+        font-variant-ligatures: none;
+      }
+      .menu-item:hover + .sub-menu,
+      .menu-item + .sub-menu:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="logo-menu">
+      <a href="index.html" class="logo-box"
+        ><img src="img/wlogo.png" class="logo"
+      /></a>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="index.html" class="menu-item">ACASA</a>
+          </li>
+          <li>
+            <a href="services.html" class="menu-item">SERVICII</a>
+          </li>
+          <li>
+            <a href="projects.html" class="menu-item">PROIECTE</a>
+            <ul class="sub-menu">
+              <li style="margin-block-start: 0.8rem">
+                <a href="culturall.html" class="sub-menu">CULTURALL</a>
+              </li>
+              <li>
+                <a href="skysc.html" class="sub-menu">SKYSCRAPER</a>
+              </li>
+              <li>
+                <a href="hotel.html" class="sub-menu">HOTEL</a>
+              </li>
+              <li>
+                <a href="industrial.html" class="sub-menu">INDUSTRIAL</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="banner">
+      <video src="img/video(25MB).mp4" muted loop autoplay></video>
+      <div class="title">
+        <h1>Forma urmează funcția.</h1>
+      </div>
+      <div class="social-media">
+        <a href="#"
+          ><img src="sm-icon/fb.png" alt="Facebook Logo" class="sm-icon"
+        /></a>
+        <a href="#"
+          ><img src="sm-icon/insta.png" alt="Instagram Logo" class="sm-icon"
+        /></a>
+        <a href="#"
+          ><img src="sm-icon/lkin.png" alt="Linkedin Logo" class="sm-icon"
+        /></a>
+      </div>
+    </div>
+    <section class="subtitle-box">
+      <h2 class="subtitle">
+        MM Atelier, un birou de arhitectură orientat către viitor. Un viitor cu
+        orașe, clădiri și spații mai sustenabile care aduc împreună comunitățile
+        de pretutindeni.
+      </h2>
+      <img src="img/sketch.png" class="subtitle-image" />
+    </section>
+    <main class="content-box">
+      <div class="content">
+        <h3>DE CE?</h3>
+        <p>
+          Scopul nostru central este acela de a proiecta clădiri complet
+          funcționale respectând în același timp crezul nostru de design. De
+          asemenea, încercăm să încurajăm îmbunătățirea stilului de viață și
+          desfășurarea mai eficientă a activităților zilnice. Ne spui povestea
+          ta, cu nevoile si dorințele pe care le ai și noi o proiectăm în
+          realitate.
+        </p>
+      </div>
+      <div class="content">
+        <h3>CE FACEM?</h3>
+        <p>
+          Suntem specializați în arhitectură, design interior și consultanță în
+          construcții de calitate, iar ceea ce oferim este o paleta largă de
+          servicii inovatoare și creative care aduc un plus de rafinament
+          proiectelor clienților noștri. Rezultatul activitații noastre este
+          reprezentat de construcții funționale, rezistente și estetice, cu un
+          consum redus de resurse energetice.
+        </p>
+      </div>
+      <div class="content">
+        <h3>CUM?</h3>
+        <p>
+          Facem asta printr-o continuă comunicare cu toți clienții noștri și
+          asta implica îndrumare, suport tehnic și consultanță în arhitectură și
+          inginerie, pe toată durata proiectului. Ne adaptăm condiționărilor și
+          reușim să obținem costuri minime în execuție și apoi în utilizare.
+        </p>
+      </div>
+    </main>
+    <section>
+      <div>
+        <p>
+          Un proiect de calitate de arhitectură reprezintă un plus în timp
+          pentru beneficiar la nivel de confort, stare de bine, de ergonomie și
+          de eficientizare a utilizării spațiilor, folosind resursele și
+          materialele responsabil.
+        </p>
+      </div>
+    </section>
+  </body>
 </html>
