@@ -74,6 +74,7 @@ color: #7f0f0f;
 font-weight: bold;
 }
 .flex-items {
+  /* min-height: 100vh; */
   margin-block-start: 1rem;
   display: flex;
   justify-content: space-around;
@@ -105,6 +106,9 @@ footer {
 .footer-btn {
   color: #000;
   text-decoration: none;
+}
+.footer-btn:hover {
+  border-block-end: 0.1rem solid #7f0f0f;
 }
 @media (min-width: 576px) {
   .logo-img{
@@ -153,7 +157,7 @@ footer {
 }
 @media (min-width: 992px) {
   .menu-btn {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .header-bar {
     display: grid;
@@ -196,9 +200,14 @@ footer {
     z-index: 1;
   }
   .hero-title {
+    font-size: 2.6rem;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     z-index: 1;
+  }
+  .hero-description {
+    font-size: 1.6rem;
+    line-height: 1.2;
   }
   .btn-text {
     grid-column: 2 / 3;
@@ -206,11 +215,16 @@ footer {
     z-index: 1;
   }
   .flex-items {
-    grid-column: 1 / 8;
+    grid-column: 1 / 9;
     grid-row: 7 / 10;
   }
   .img-2-home {
     width: 40%;
+  }
+  .text-2-home {
+    font-size: 1.8rem;
+    text-align: center;
+    justify-self: center;
   }
   .social-list {
     grid-column: 1 / 9;
@@ -220,9 +234,9 @@ footer {
     transform: scale(120%);
   }
   .contact-btn {
-    width: 12rem;
-    padding: 0.6rem 0.8rem 0.6rem 0.8rem;
-    font-size: 1.2rem;
+    width: 14rem;
+    padding: 0.6rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-block-start: 1rem;
   }

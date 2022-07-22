@@ -30,32 +30,32 @@
 .material-symbols-outlined {
   color: rgb(201, 201, 201);
 }
-.gallery-icon {
+.contact-icon {
   color: #7f0f0f;
 }
 .subtitle {
   text-align: center;
 }
-.gallery-pattern {
+.contact-flex {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 2rem;
   gap: 1rem;
 }
-.img-gallery {
+.address {
+  font-size: 1.8rem;
+  border-block-end: 0.1rem solid #7f0f0f;
+}
+.email {
+  border-block-end: 0.1rem solid #7f0f0f;
+}
+.address a {
+  text-decoration: none;
+  color: #000;
+}
+.map {
   width: 100%;
-  height: auto;
-  padding-block-start: 1rem;
-  border-block-start: 0.1rem solid #7f0f0f;
-}
-.img-title-gallery {
-  text-align: center;
-  font-size: 1.6rem;
-}
-.text-gallery {
-  text-align: center;
-  margin: 0 auto;
-  font-family: 'Ibarra Real Nova', serif;
-  width: 80%;
 }
 .social-list {
   border-block-end: 0.1rem solid #7f0f0f;
@@ -75,13 +75,12 @@ footer {
 .footer-btn {
   color: #000;
   text-decoration: none;
-  transition: 0.3s;
-}
-.footer-menu {
-  color: #000;
 }
 .footer-btn:hover {
   border-block-end: 0.1rem solid #7f0f0f;
+}
+.footer-menu {
+  color: #000;
 }
 @media (min-width: 576px) {
   .logo-img{
@@ -94,11 +93,18 @@ footer {
  .menu-btn {
   color: #000;
  }
- .gallery {
+ .contact {
   color: #7f0f0f;
  }
  .small {
   display: none;
+ }
+ .contact-flex {
+  flex-direction: row;
+  justify-content: space-around;
+ }
+ .map {
+  width: 50%;
  }
  .copyright {
   font-size: 1rem;
@@ -120,8 +126,6 @@ footer {
   .img-gallery {
     width: 80%;
     border: none;
-    height: 100vh;
-    object-fit: cover;
   }
   .img-1 {
     grid-column: 1 / 2;
