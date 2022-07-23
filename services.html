@@ -15,34 +15,124 @@
     <link rel="stylesheet" href="styleall.css" />
     <link rel="stylesheet" href="style-each/style-services.css" />
     <style>
-      @media (min-width: 489px) {
+      .services-content {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-block-start: 1rem;
+        padding: 1rem;
+        padding-block-end: 0;
+        justify-items: center;
       }
-      @media (min-width: 640px) {
+      .services-img {
+        width: 70vw;
+        max-width: 20rem;
+        height: auto;
       }
+      .services-head-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .services-head-box * {
+        margin: 0;
+      }
+      .services-head-text,
+      .services-text {
+        font-family: "modern", sans-serif;
+        font-size: 1.2rem;
+        font-variant-ligatures: none;
+        font-weight: 600;
+        text-align: center;
+      }
+      p.services-head-text {
+        max-width: 30rem;
+      }
+      .services-head-quote,
+      .services-title {
+        font-family: "lemonmilk", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+        color: #000;
+      }
+      h2.services-title {
+        box-shadow: inset 0rem -0.7rem 0rem -0.6rem rgb(45, 45, 45);
+      }
+
       @media (min-width: 780px) {
-        .footer-content {
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: flex-start;
+        .services-content {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          align-items: center;
+          width: 45rem;
+          margin: auto;
         }
-        .list-footer {
-          margin: 0.8rem;
-          padding: 0.8rem;
+        .services-head-box {
+          margin-block-end: 1.5rem;
         }
-        div.list-footer p.copyright {
-          margin-block: 0.5rem;
+        h2.services-title {
+          box-shadow: none;
         }
-        div.sm-logo-footer {
-          margin-inline: 6rem 3rem;
-          align-self: center;
+        p.services-text {
+          border-inline-start: 0.2rem solid black;
+          margin: 0;
+          padding-block: 1rem;
+          padding-inline: 1rem 0rem;
+          width: 22rem;
         }
-        div.list-contact-footer {
-          margin-inline-end: 1rem;
+        p.services-text::before {
+          content: "";
+          position: absolute;
+          transform: translate(-46px, -23px);
+          /* left: 49.2vw; */
+          width: 1rem;
+          height: 1rem;
+          background-color: #000;
         }
-        .logo-footer {
-          width: 5rem;
+        .services-head.box {
+          grid-column: 1/2;
+          grid-row: 1/2;
+        }
+        .services-img {
+          grid-column: 2/3;
+          grid-row: 1/2;
+        }
+        .services-title.one {
+          grid-column: 1/2;
+          grid-row: 2/3;
+        }
+        .services-title.two {
+          grid-column: 1/2;
+          grid-row: 3/4;
+        }
+        .services-title.three {
+          grid-column: 1/2;
+          grid-row: 4/5;
+        }
+        .services-title.four {
+          grid-column: 1/2;
+          grid-row: 5/6;
+        }
+        p.services-text.one {
+          grid-column: 2/3;
+          grid-row: 2/3;
+        }
+        p.services-text.two {
+          grid-column: 2/3;
+          grid-row: 3/4;
+        }
+
+        p.services-text.three {
+          grid-column: 2/3;
+          grid-row: 4/5;
+        }
+        p.services-text.four {
+          grid-column: 2/3;
+          grid-row: 5/6;
         }
       }
+
       @media (min-width: 1024px) {
       }
     </style>
@@ -87,78 +177,81 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h2 id="dde">Domenii de expertiză</h2>
-      <h2 id="spg">Servicii proiectare generală</h2>
-      <h2 id="ep">Etape proiect</h2>
-      <h2 id="sd">Studii & Documentații</h2>
+    <main class="services-content">
+      <div class="services-head-box">
+        <p class="services-head-text">
+          Oferim o gamă largă de servicii care variază în funcție de cerințele,
+          nevoile și posibilitățile dumneavoastră. Adaptarea serviciilor acestui
+          birou la aceste cerințe exprimate de către beneficiar este una dintre
+          prioritățile noastre.
+        </p>
+        <p class="services-head-quote">Noi dăm formă locului tău în lume.</p>
+        <p class="services-head-text">
+          Descoperim preferințele și cerințele existente. Le transpunem în mod
+          armonios și echilibrat într-un concept estetic și funcțional. Pe
+          structura acestuia, construim întregul proiect de arhitectură și
+          design. Stabilim etapele de realizare, respectând termenele de
+          execuție și alegem materialele, finisajele sau piesele de mobilier, în
+          limita bugetului alocat.
+        </p>
+      </div>
+      <img class="services-img" src="img/Services.jpg" alt="Schita" />
+      <h2 class="services-title one" id="dde">Domenii de expertiză</h2>
+      <p class="services-text one">
+        MM Atelier a finalizat peste 100 de proiecte, incluzând: proiectarea de
+        clădiri noi, renovări, consolidări și extinderi ale unor clădiri
+        existente, spații comerciale, design interior și dezvoltarea anumitor
+        concepte speciale. Ne concentrăm pe proiecte sustenabile. Principiile pe
+        care le urmăm sunt adaptarea la context, orientarea peisagistică,
+        organizarea eficientă a spațiilor interioare astfel încât soluțiile
+        propuse să permită flexibilitate în timp. Principiile dezvoltării
+        durabile sunt luate în considerare încă din faza de concept.
+      </p>
+      <h2 class="services-title two" id="spg">Servicii proiectare generală</h2>
+      <p class="services-text two">
+        Totul începe de la conceptul de arhitectură. Acesta este pasul prin care
+        trecem de la idei, la piese concrete materializate prin schițe, scheme,
+        desene, perspective, astfel încât să obținem cea mai bună soluție pentru
+        realizarea construcției. Este cea mai creativă și importantă fază.
+        Practic, în această fază punem bazele proiectului care se va dezvolta
+        ulterior. Oferim servicii complete de proiectare, de la concept până la
+        finalizarea completă a clădirii, incluzând toate fazele specifice de
+        proiectare. Proiectul de arhitectură include conceptul de bază al
+        clientului, filtrat de raționamentul arhitectului și adaptarea
+        obiectului de studiu la normele impuse de lege.
+      </p>
+      <h2 class="services-title three" id="ep">Etape proiect</h2>
+      <p class="services-text three">
+        Începem cu o întâlnire și stabilim tema de proiectare. Tema de
+        proiectare este documentul scris care sintetizează și rezumă scopul
+        proiectului, date de amplasament, restricții cunoscute, estimare
+        suprafețe, nevoi, dorințe, vise, etapele și fazele proiectului. O dată
+        cu clarificarea acestei etape se poate trece la faza următoare de
+        creionare a conceptului. În baza temei și a conceptului se întocmește
+        proiectul tehnic al construcției. În etapa de șantier oferim asistență
+        tehnică explicăm proiectul, anticipăm eventuale probleme, oferim
+        sprijinul necesar în execuție, adaptăm soluțiile dacă este cazul, alegem
+        dintre mostrele de materiale. Urmărirea respectării proiectului în
+        timpul șantierului este esențială pentru o calitate cât mai bună a
+        proiectului.
+      </p>
+      <h2 class="services-title four" id="sd">Studii & Documentații</h2>
+      <p class="services-text four">
+        Întocmim documentația completă pentru a obține în final autorizația de
+        construcție (actul de autoritate al administrației publice locale în
+        baza căruia se pot executa lucrări de construcții și în baza căruia se
+        asigură măsurile legale privind amplasarea, proiectarea, executarea și
+        funcționarea obiectivelor de investiții). De asemenea, întocmim și ne
+        ocupăm de documentația pentru avizele (electricitate, apă și canalizare,
+        telefonie etc.) solicitate de administrația locală. Toate proiectele
+        noastre sunt modelate în folosind cea mai recentă tehnologie 3D cu
+        software cu licență Revit, care reprezintă baza pentru BIM (Building
+        Information Modeling).
+      </p>
     </main>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque
-      sint laborum vero fugit, iusto dolore nostrum quibusdam, harum quisquam
-      assumenda incidunt veritatis placeat alias in quam ipsum quis id? Ducimus
-      recusandae at praesentium obcaecati doloremque! Dolore, commodi beatae ex
-      porro, repellendus ea vero dolorem voluptates itaque odio sequi quod
-      tempore voluptatem quaerat consectetur. Libero repellendus blanditiis
-      inventore culpa beatae! Aliquam sequi ad debitis nobis, vel alias.
-      Doloribus nihil possimus voluptates labore expedita eum voluptas modi,
-      recusandae tenetur fugiat illum? Dolorem excepturi nisi obcaecati dolores
-      odio impedit, ad modi aliquid. Eum excepturi rem, vel quod sunt assumenda
-      ad, nostrum consequuntur, voluptate tempore officiis neque placeat natus
-      esse. Cum necessitatibus optio tenetur omnis deserunt assumenda ad earum
-      soluta incidunt? Perferendis, a. Quod animi cum explicabo cumque odit hic
-      exercitationem perspiciatis accusamus, nostrum dignissimos iusto
-      praesentium libero saepe ipsum nam culpa eos. Vel perspiciatis quasi saepe
-      cumque eligendi illo, nihil eos debitis.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque
-      sint laborum vero fugit, iusto dolore nostrum quibusdam, harum quisquam
-      assumenda incidunt veritatis placeat alias in quam ipsum quis id? Ducimus
-      recusandae at praesentium obcaecati doloremque! Dolore, commodi beatae ex
-      porro, repellendus ea vero dolorem voluptates itaque odio sequi quod
-      tempore voluptatem quaerat consectetur. Libero repellendus blanditiis
-      inventore culpa beatae! Aliquam sequi ad debitis nobis, vel alias.
-      Doloribus nihil possimus voluptates labore expedita eum voluptas modi,
-      recusandae tenetur fugiat illum? Dolorem excepturi nisi obcaecati dolores
-      odio impedit, ad modi aliquid. Eum excepturi rem, vel quod sunt assumenda
-      ad, nostrum consequuntur, voluptate tempore officiis neque placeat natus
-      esse. Cum necessitatibus optio tenetur omnis deserunt assumenda ad earum
-      soluta incidunt? Perferendis, a. Quod animi cum explicabo cumque odit hic
-      exercitationem perspiciatis accusamus, nostrum dignissimos iusto
-      praesentium libero saepe ipsum nam culpa eos. Vel perspiciatis quasi saepe
-      cumque eligendi illo, nihil eos debitis.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque
-      sint laborum vero fugit, iusto dolore nostrum quibusdam, harum quisquam
-      assumenda incidunt veritatis placeat alias in quam ipsum quis id? Ducimus
-      recusandae at praesentium obcaecati doloremque! Dolore, commodi beatae ex
-      porro, repellendus ea vero dolorem voluptates itaque odio sequi quod
-      tempore voluptatem quaerat consectetur. Libero repellendus blanditiis
-      inventore culpa beatae! Aliquam sequi ad debitis nobis, vel alias.
-      Doloribus nihil possimus voluptates labore expedita eum voluptas modi,
-      recusandae tenetur fugiat illum? Dolorem excepturi nisi obcaecati dolores
-      odio impedit, ad modi aliquid. Eum excepturi rem, vel quod sunt assumenda
-      ad, nostrum consequuntur, voluptate tempore officiis neque placeat natus
-      esse. Cum necessitatibus optio tenetur omnis deserunt assumenda ad earum
-      soluta incidunt? Perferendis, a. Quod animi cum explicabo cumque odit hic
-      exercitationem perspiciatis accusamus, nostrum dignissimos iusto
-      praesentium libero saepe ipsum nam culpa eos. Vel perspiciatis quasi saepe
-      cumque eligendi illo, nihil eos debitis.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, tempora ex
-      libero aut natus, repellat laborum asperiores vel pariatur illo harum
-      illum, maiores repudiandae vitae minima iure ipsam officia porro?
-      Doloribus, deleniti, magnam laboriosam nesciunt necessitatibus velit fuga
-      aspernatur vel quasi magni vero illo pariatur odio culpa provident debitis
-      quaerat ex nulla suscipit numquam modi saepe reiciendis soluta. Nam,
-      minima.
-    </p>
     <footer class="footer-box">
       <div class="footer-content">
-        <div class="sm-logo-footer">
+        <div class="sm-logo-footer footer-menu-item">
           <img src="img/blogo.png" class="logo-footer" />
           <div class="social-media-footer">
             <a href="#">
@@ -184,7 +277,7 @@
             </a>
           </div>
         </div>
-        <div class="list-footer list-menu-footer">
+        <div class="list-footer list-menu-footer footer-menu-item">
           <h4>Meniu</h4>
           <ul class="menu-footer">
             <li><a href="index.html" class="footer-item">ACASĂ</a></li>
@@ -192,7 +285,7 @@
             <li><a href="projects.html" class="footer-item">PROIECTE</a></li>
           </ul>
         </div>
-        <div class="list-footer list-contact-footer">
+        <div class="list-footer list-contact-footer footer-menu-item">
           <h4>Contactează-ne:</h4>
           <ul class="menu-footer">
             <li>

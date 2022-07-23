@@ -1,8 +1,7 @@
 :root {
   --bg-color-logo-menu: #fff;
   --box-shadow-logo-menu: #000;
-  --position-logo-menu: sticky;
-  --bg-menu-box: #fff;
+  --position-logo-menu: none;
   --color-menu-item: #000;
   --text-shadow-menu-item: #fff;
   --box-shadow-submenu: 7px 0px 5px -3px rgba(47, 47, 47, 0.2),
