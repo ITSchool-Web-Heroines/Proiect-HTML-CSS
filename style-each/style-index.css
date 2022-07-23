@@ -32,8 +32,7 @@
   z-index: 1;
   margin: 0 auto;
   text-align: center;
-  max-width: 54rem;
-  width: 74vw;
+  width: 100vw;
 }
 .banner .title h1 {
   font-family: "modern";
@@ -75,10 +74,13 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
-.subtitle-box,
 .content-box {
   margin: 1rem;
+}
+.subtitle-box {
+  margin: 0;
 }
 .services-box {
   margin: 2rem auto;
@@ -166,13 +168,11 @@ img.project-plan {
 }
 section.projects-box {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
 }
+/* Responsive */
 @media (min-width: 489px) {
-  .banner .title {
-    width: 50vw;
-  }
   .banner .title h1 {
     font-size: 4rem;
   }
@@ -211,21 +211,18 @@ section.projects-box {
     width: 50vw;
     margin: 0rem;
   }
-  section.projects-box {
-    flex-direction: row-reverse;
+  main.content-box {
+    padding: 1.5rem;
+    border-block-end: 0.03rem solid #cccccc;
   }
 }
 @media (min-width: 780px) {
-  .banner .title {
-    width: 45vw;
-  }
   .banner .title h1 {
     font-size: 5rem;
   }
   main.content-box {
     flex-direction: row;
     align-items: flex-start;
-    margin: 2rem;
   }
   div.content {
     width: 30rem;
@@ -235,7 +232,7 @@ section.projects-box {
     font-size: 2rem;
   }
   p.subtext {
-    width: 15rem;
+    width: 25rem;
   }
   p.subtext,
   p.project-text {
@@ -251,4 +248,64 @@ section.projects-box {
   }
 }
 @media (min-width: 1024px) {
+  div.future-subtitle {
+    gap: 10rem;
+  }
+  h2.subtitle,
+  h2.services-subtitle,
+  .subtitle div.brand,
+  h2.content-title {
+    font-size: 2rem;
+  }
+  .project-content {
+    width: 30rem;
+  }
+  main.content-box {
+    gap: 2rem;
+  }
+  section.projects-box {
+    flex-direction: row-reverse;
+    margin-inline: 1rem;
+    padding-inline: 1rem;
+    justify-content: center;
+  }
+  .subtitle-image {
+    width: 55vw;
+    max-width: 30rem;
+  }
+  .sm-icon {
+    width: 3rem;
+  }
+}
+@media (min-width: 2000px) {
+  p.subtext,
+  p.content-text,
+  p.project-text {
+    font-size: 2.5rem;
+  }
+  p.subtext {
+    width: 25rem;
+  }
+
+  h2.content-title {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  h2.subtitle,
+  h2.services-subtitle,
+  .subtitle div.brand {
+    font-size: 3.5rem;
+  }
+  .btn-services,
+  .btn-projects {
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .project-content {
+    width: 50rem;
+  }
+  p.subtext {
+    width: 35rem;
+  }
 }
