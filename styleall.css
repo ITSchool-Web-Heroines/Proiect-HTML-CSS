@@ -42,11 +42,11 @@ body::-webkit-scrollbar-thumb {
 /* Logo */
 .logo-box {
   margin-block-start: 0.5rem;
+  margin-inline-end: 0.7rem;
 }
 .logo {
   margin: auto;
-  width: 30vw;
-  max-width: 7rem;
+  width: 4.5rem;
   height: auto;
   filter: drop-shadow(0.07rem 0rem 0.08rem #000);
 }
@@ -206,8 +206,7 @@ p.copyright {
     margin-block: 0.5rem;
   }
   .logo {
-    width: 7rem;
-    max-width: none;
+    width: 5rem;
   }
   .menu-box {
     margin-inline: 0rem 1rem;
@@ -215,11 +214,11 @@ p.copyright {
   }
   .menu > li > .menu-item {
     margin: 1rem;
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .sub-menu {
     width: 10rem;
-    top: 8.2rem;
+    top: 6.7rem;
   }
   .footer-content {
     flex-direction: row;

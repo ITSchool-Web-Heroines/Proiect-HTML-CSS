@@ -309,3 +309,11 @@ section.projects-box {
     width: 35rem;
   }
 }
+@media (orientation: landscape) and (min-width: 375px) {
+  .banner .title h1 {
+    font-size: 2rem;
+  }
+  .banner .title {
+    margin-block-start: 3rem;
+  }
+}
