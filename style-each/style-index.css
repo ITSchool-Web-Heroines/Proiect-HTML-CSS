@@ -334,3 +334,8 @@ section.projects-box {
     font-size: 3rem;
   }
 }
+@media (orientation: landscape) and (min-width: 780px) {
+  .banner .title h1 {
+    font-size: 3.5rem;
+  }
+}
