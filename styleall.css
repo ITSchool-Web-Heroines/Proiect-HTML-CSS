@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  scrollbar-color: #cccccc transparent;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 0.1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+}
+@font-face {
+  font-family: lemonmilk;
+  src: url("font/LemonMilk.woff") format("webopenfontformat"),
+    url("font/LemonMilk.ttf") format("truetype");
+  font-variant-ligatures: none;
+}
+@font-face {
+  font-family: modern;
+  src: url("font/Modern.woff") format("webopenfontformat"),
+    url("font/Modern.ttf") format("truetype");
+}
+/* Main Menu */
+.logo-menu {
+  background-color: var(--bg-color-logo-menu);
+  box-shadow: 0rem 0.065rem 0.5rem var(--box-shadow-logo-menu);
+  position: var(--position-logo-menu);
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* Logo */
+.logo-box {
+  margin-block-start: 0.5rem;
+}
+.logo {
+  margin: auto;
+  width: 40vw;
+  max-width: 7rem;
+  height: auto;
+  filter: drop-shadow(0.07rem 0rem 0.08rem #000);
+}
+/* Menu
+.menu * {
+  margin: 0;
+  padding: 0;
+} */
+.menu-box {
+  background: var(--bg-menu-box);
+}
+.menu-box ul {
+  list-style: none;
+  padding-inline: 0;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-block-start: -0.5rem;
+  margin-block-end: 0rem;
+}
+.menu > li > .menu-item {
+  display: block;
+  padding: 0.9rem 0;
+  font-family: "modern", sans-serif;
+  font-variant-ligatures: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-menu-item);
+  text-shadow: 0.065rem 0rem 0.08rem var(--text-shadow-menu-item);
+  text-decoration: none;
+  transition-property: transform, text-shadow;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.menu li .menu-item:hover {
+  transform: scale(120%);
+  text-shadow: 0.1rem 0rem 0.1rem var(--text-shadow-menu-item);
+}
+/* Submenu */
+.sub-menu {
+  position: absolute;
+  background: #fff;
+  box-shadow: var(--box-shadow-submenu);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+  width: 7rem;
+  transform: translateX(-1.2rem);
+}
+.sub-menu li a {
+  display: block;
+  padding: 0.5rem;
+  font-family: "modern", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 80%;
+  font-weight: 600;
+  font-variant-ligatures: none;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu li:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+}
+.menu li:focus .sub-menu,
+.menu li:focus-within .sub-menu {
+  visibility: visible;
+  opacity: 1;
+}
+/* Footer */
+.footer-box {
+  opacity: 85%;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-block-start: 0.03rem solid #cccccc;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+.sm-logo-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block-start: 0.5rem;
+  gap: 0.3rem;
+}
+.social-media-footer a {
+  text-decoration: none;
+}
+.sm-icon-footer {
+  width: 1.1rem;
+  height: auto;
+}
+.logo-footer {
+  width: 3rem;
+  height: auto;
+}
+.list-footer h4 {
+  font-family: "lemonmilk", sans-serif;
+  font-variant-ligatures: none;
+  margin: 0;
+  font-size: 1rem;
+}
+.menu-footer li {
+  list-style: none;
+  padding: 0.5rem;
+}
+.menu-footer .footer-item,
+.copyright {
+  font-family: "modern", sans-serif;
+  font-variant-ligatures: none;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+}
+.menu-footer li:hover {
+  box-shadow: inset 0rem -0.7rem 0rem -0.6rem #000;
+}
+ul.menu-footer,
+.list-footer {
+  display: flex;
+  margin: 0rem;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+p.copyright {
+  border-block: 0.03rem solid #cccccc;
+  width: 100vw;
+  padding-block: 1rem;
+  text-align: center;
+}
+@media (min-width: 780px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .list-footer {
+    margin: 0.8rem;
+    padding: 0.8rem;
+  }
+  div.list-footer p.copyright {
+    margin-block: 0.5rem;
+  }
+  div.sm-logo-footer {
+    margin-inline: 6rem 3rem;
+    align-self: center;
+  }
+  div.list-contact-footer {
+    margin-inline-end: 1rem;
+  }
+  .logo-footer {
+    width: 5rem;
+  }
+}
