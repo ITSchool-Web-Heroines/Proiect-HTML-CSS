@@ -216,9 +216,6 @@ section.projects-box {
   }
 }
 @media (min-width: 780px) {
-  .banner .title h1 {
-    font-size: 5rem;
-  }
   main.content-box {
     flex-direction: row;
     align-items: flex-start;
@@ -274,6 +271,9 @@ section.projects-box {
   }
 }
 @media (min-width: 1600px) {
+  .banner .title h1 {
+    font-size: 5rem;
+  }
   p.subtext,
   p.content-text,
   p.project-text {
