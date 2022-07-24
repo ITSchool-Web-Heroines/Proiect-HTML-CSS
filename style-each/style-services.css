@@ -35,7 +35,7 @@ h2.services-title {
 .services-img,
 .services-head-box,
 h2.services-title {
-  animation: ani-services-img-title 2s ease-in 1 normal running;
+  animation: ani-services-img-title 1.5s ease-in 1 normal running;
 }
 @keyframes ani-services-img-title {
   0% {
@@ -64,6 +64,8 @@ h2.services-title {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  border-block: 0.03rem solid #cccccc;
+  padding: 0.5rem;
 }
 .services-head-box * {
   margin: 0;
@@ -88,7 +90,7 @@ p.services-head-text {
   color: #000;
 }
 p.services-text {
-  animation: ani-services-content 3s ease-in 1 normal running;
+  animation: ani-services-content 2.5s ease-in 1 normal running;
 }
 @keyframes ani-services-content {
   0% {
@@ -125,6 +127,7 @@ p.services-text {
   }
   .services-head-box {
     margin-block-end: 1.5rem;
+    border-block: 0rem;
   }
   h2.services-title {
     box-shadow: none;
@@ -202,7 +205,7 @@ p.services-text {
   }
   img.services-img,
   .services-head-box {
-    animation: ani-services-img-title 1s ease-in 1 normal running;
+    animation: ani-services-img-title 500ms ease-in 1 normal running;
   }
 }
 @media (min-width: 1024px) {
