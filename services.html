@@ -14,128 +14,6 @@
     />
     <link rel="stylesheet" href="styleall.css" />
     <link rel="stylesheet" href="style-each/style-services.css" />
-    <style>
-      .services-content {
-        display: grid;
-        grid-template-columns: 100%;
-        margin-block-start: 1rem;
-        padding: 1rem;
-        padding-block-end: 0;
-        justify-items: center;
-      }
-      .services-img {
-        width: 70vw;
-        max-width: 20rem;
-        height: auto;
-      }
-      .services-head-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-      }
-      .services-head-box * {
-        margin: 0;
-      }
-      .services-head-text,
-      .services-text {
-        font-family: "modern", sans-serif;
-        font-size: 1.2rem;
-        font-variant-ligatures: none;
-        font-weight: 600;
-        text-align: center;
-      }
-      p.services-head-text {
-        max-width: 30rem;
-      }
-      .services-head-quote,
-      .services-title {
-        font-family: "lemonmilk", sans-serif;
-        font-size: 1.2rem;
-        font-weight: 600;
-        text-align: center;
-        color: #000;
-      }
-      h2.services-title {
-        box-shadow: inset 0rem -0.7rem 0rem -0.6rem rgb(45, 45, 45);
-      }
-
-      @media (min-width: 780px) {
-        .services-content {
-          display: grid;
-          grid-template-columns: 50% 50%;
-          align-items: center;
-          width: 45rem;
-          margin: auto;
-        }
-        .services-head-box {
-          margin-block-end: 1.5rem;
-        }
-        h2.services-title {
-          box-shadow: none;
-        }
-        p.services-text {
-          border-inline-start: 0.2rem solid black;
-          margin: 0;
-          padding-block: 1rem;
-          padding-inline: 1rem 0rem;
-          width: 22rem;
-        }
-        p.services-text::before {
-          content: "";
-          position: absolute;
-          transform: translate(-46px, -23px);
-          /* left: 49.2vw; */
-          width: 1rem;
-          height: 1rem;
-          background-color: #000;
-        }
-        .services-head.box {
-          grid-column: 1/2;
-          grid-row: 1/2;
-        }
-        .services-img {
-          grid-column: 2/3;
-          grid-row: 1/2;
-        }
-        .services-title.one {
-          grid-column: 1/2;
-          grid-row: 2/3;
-        }
-        .services-title.two {
-          grid-column: 1/2;
-          grid-row: 3/4;
-        }
-        .services-title.three {
-          grid-column: 1/2;
-          grid-row: 4/5;
-        }
-        .services-title.four {
-          grid-column: 1/2;
-          grid-row: 5/6;
-        }
-        p.services-text.one {
-          grid-column: 2/3;
-          grid-row: 2/3;
-        }
-        p.services-text.two {
-          grid-column: 2/3;
-          grid-row: 3/4;
-        }
-
-        p.services-text.three {
-          grid-column: 2/3;
-          grid-row: 4/5;
-        }
-        p.services-text.four {
-          grid-column: 2/3;
-          grid-row: 5/6;
-        }
-      }
-
-      @media (min-width: 1024px) {
-      }
-    </style>
   </head>
   <body>
     <header class="logo-menu">
@@ -196,7 +74,8 @@
         </p>
       </div>
       <img class="services-img" src="img/Services.jpg" alt="Schita" />
-      <h2 class="services-title one" id="dde">Domenii de expertiză</h2>
+      <section id="dde"></section>
+      <h2 class="services-title one">Domenii de expertiză</h2>
       <p class="services-text one">
         MM Atelier a finalizat peste 100 de proiecte, incluzând: proiectarea de
         clădiri noi, renovări, consolidări și extinderi ale unor clădiri
@@ -207,7 +86,8 @@
         propuse să permită flexibilitate în timp. Principiile dezvoltării
         durabile sunt luate în considerare încă din faza de concept.
       </p>
-      <h2 class="services-title two" id="spg">Servicii proiectare generală</h2>
+      <section id="spg"></section>
+      <h2 class="services-title two">Servicii proiectare generală</h2>
       <p class="services-text two">
         Totul începe de la conceptul de arhitectură. Acesta este pasul prin care
         trecem de la idei, la piese concrete materializate prin schițe, scheme,
@@ -220,7 +100,8 @@
         clientului, filtrat de raționamentul arhitectului și adaptarea
         obiectului de studiu la normele impuse de lege.
       </p>
-      <h2 class="services-title three" id="ep">Etape proiect</h2>
+      <section id="ep"></section>
+      <h2 class="services-title three">Etape proiect</h2>
       <p class="services-text three">
         Începem cu o întâlnire și stabilim tema de proiectare. Tema de
         proiectare este documentul scris care sintetizează și rezumă scopul
@@ -235,7 +116,8 @@
         timpul șantierului este esențială pentru o calitate cât mai bună a
         proiectului.
       </p>
-      <h2 class="services-title four" id="sd">Studii & Documentații</h2>
+      <section id="sd"></section>
+      <h2 class="services-title four">Studii & Documentații</h2>
       <p class="services-text four">
         Întocmim documentația completă pentru a obține în final autorizația de
         construcție (actul de autoritate al administrației publice locale în
