@@ -1,75 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proiect HTML+CSS</title>
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-        }
-    </style>
-</head>
-<body>
-    <h1>Web Heroines</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THYNK TRAVEL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <ul class="nav">
+        <li><a href="destinatii.html" class="menu-item">Destinații</a></li>
+        <li><a href="index.html" class="logo menu-item">THYNK TRAVEL</a></li>
+        <li><a href="contact.html" class="menu-item">Contact</a></li>
+      </ul>
+      <h1 class="page-title">Descoperă locații unice <span></span></h1>
+      <h2 class="page-subtitle">Din întreaga lume</h2>
+      <a href="destinatii.html" class="btn-explore">Explorează</a>
+    </header>
+    <section class="explore">
+      <h2 class="same-h2">Cele mai căutate</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="img/nusa_penida.jpg" alt="nusa-penida" />
+          <div class="info">
+            <a href="nusa-penida.html" class="card-name">Nusa Penida</a>
+            <span class="card-location">Bali, indonesia</span>
+          </div>
+        </div>
+        <div class="card center">
+          <img src="img/mattehorn.jpg" alt="mattehorn" />
+          <div class="info">
+            <a href="mattehorn.html" class="card-name">Mattehorn</a>
+            <span class="card-location">Italia</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/insula_siargao.jpg" alt="insula-siargao" />
+          <div class="info">
+            <a href="insula-siargao.html" class="card-name">Insula Siargao</a>
+            <span class="card-location">Filipine</span>
+          </div>
+        </div>
+      </div>
+      <a href="destinatii.html" class="see-more">Vezi mai multe</a>
+    </section>
 
-    <h2>Cerințele proiectului</h2>
-    <ul>
-        <li>
-            Trebuie prezentat la sesiunea 13 (scuze dacă sunteți superstițioase)
-            Adică pe <strong>26 Iulie 2022</strong>.
-            <ol>
-                <li>
-                    În cazuri motivate, în care nu poți participa atunci, ne putem uita mai devreme.
-                </li>
-                <li>
-                    Dacă nu poți, sau dintr-un motiv sau altul nu vrei să faci proiectul, spune-mi.
-                </li>
-            </ol>
-        </li>
-        <li>
-            Cât mai curând posibil, trebuie anunțat care va fi subiectul site-ului
-            <ol>
-                <li>
-                    Dacă nu ai idei, spune și vom găsi împreună ceva ce te pasionează
-                </li>
-            </ol>
-        </li>
-        <li>
-            Construiește un site complet și funcțional
-            <ol>
-                <li>
-                    Minim 3 pagini
-                </li>
-                <li>
-                    Optimizat pentru toate dimensiunile de ecran.
-                    <br />
-                    (Bonus dacă arată bine pe mobil în landscape)
-                </li>
-                <li>Folosește corect Grid Layout și Flexbox.</li>
-                <li>Arată cât mai frumos și modern (se pot folosi alte site-uri pentru inspirație).</li>
-                <li>Codul copiat este acceptat, dar te voi întreba de el.</li>
-            </ol>
-        </li>
-        <li>
-            Codul sursă va fi disponibil pe GitHub.
-            <ol>
-                <li>
-                    Link la codul sursă trebuie postat pe #homework
-                    cu 24 de ore înainte de prezentare.
-                </li>
-            </ol>
-        </li>
-        <li>
-            Site-ul trebuie să fie accesibil pentru a fi testat.
-            <ol>
-                <li>În sesiunea 11, vom fi văzut cum se publică un site gratuit pe GitHub Pages.</li>
-                <li>Dacă vrei să publici altundeva, e OK, dar nu știu dacă te voi putea ajuta.</li>
-                <li>Codul din test trebuie să fie identic cu cel din GitHub</li>
-            </ol>
-        </li>
-    </ul>
-</body>
+    <section class="sponsors">
+      <a href="https://booking.com" class="sponsor"
+        ><img
+          src="logo/Booking.png"
+          alt="Chase logo"
+          id="booking"
+          class="booking"
+      /></a>
+      <a href="https://airbnb.com" class="sponsor"
+        ><img
+          src="logo/Airbnb.png"
+          alt="Asana logo"
+          id="airbnb"
+          class="airbnb"
+        />
+      </a>
+      <a href="https://momondo.com" class="sponsor"
+        ><img
+          src="logo/momondo.png"
+          alt="BuzzFeed logo"
+          id="momondo"
+          class="momondo"
+      /></a>
+      <a href="https://trivago.com" class="sponsor"
+        ><img
+          src="logo/Trivago.png"
+          alt="Toggl logo"
+          id="trivago"
+          class="trivago"
+      /></a>
+    </section>
+
+    <section>
+      <h2 class="same-h2">Motive să călătorești</h2>
+      <div class="reasons">
+        <div><img src="img/img1.png" alt="" class="left" /></div>
+        <div class="text-pg">
+          <div class="individual">
+            <h2>01</h2>
+            <p class="minipg">Dobândești numeroase amintiri frumoase</p>
+          </div>
+          <div class="individual">
+            <h2>02</h2>
+            <p class="minipg">Descoperi istoria și cultura locului</p>
+          </div>
+
+          <div class="individual">
+            <h2>03</h2>
+            <p class="minipg">Vezi lucruri noi uimitoare</p>
+          </div>
+        </div>
+        <div><img src="img/img2.png" alt="" class="right" /></div>
+      </div>
+    </section>
+    <section class="week">
+      <h2 class="same-h2">Recomandarea săptămânii</h2>
+      <div class="week-card">
+        <img src="img/lacul_sorapiss.jpg" alt="lacul-srapiss" />
+        <div class="week-text">
+          <h2 class="week-title">Lacul <span> Sorapiss</span></h2>
+          <p class="week-paragraph">
+            Este un lac în lanțul muntos Sorapiss în Dolomiți, provincia
+            Belluno. La 12 km distanță de Cortina d'Ampezzo. Lacul are o
+            altitudine de 1.925 metri deasupra nivelului mării.
+          </p>
+          <div class="week-btn">
+            <a href="lacul-sorapiss.html" class="btn-explore">Vezi mai multe</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <a href="https://www.instagram.com/"
+        ><img src="icons/instagram.png" alt="instagram" class="icon"
+      /></a>
+      <a href="https://facebook.com"
+        ><img src="icons/facebook.png" alt="facebook" class="icon"
+      /></a>
+      <a href="https://tiktok.com"
+        ><img src="icons/titkok.png" alt="tiktok" class="icon"
+      /></a>
+    </footer>
+  </body>
 </html>

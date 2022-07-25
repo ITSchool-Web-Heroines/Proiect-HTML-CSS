@@ -1,0 +1,12 @@
+:root {
+  --main-bg-color: linear-gradient(
+    180deg,
+    #000000 40.02%,
+    rgba(3, 33, 54, 0.81) 100%
+  );
+  --color1: #76949f;
+  --color2: rgba(3, 33, 54, 0.81);
+  --color3: #76949f;
+  --color4: #18222a;
+  --title: 2.8rem;
+}
