@@ -114,14 +114,14 @@ div.flip-card-front {
     filter: blur(0rem);
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 375px) {
   :root {
-    --project-fc-size: 13rem;
+    --project-fc-size: 10rem;
   }
   main.projects-box {
     grid-template-columns: 50% 50%;
     align-items: end;
-    width: 28rem;
+    width: 22rem;
     row-gap: 1rem;
   }
   div.projects-head-box {
@@ -136,12 +136,12 @@ div.flip-card-front {
   }
   .projects-head-title,
   .projects-img {
-    font-size: 1.4rem;
-    width: 27rem;
+    font-size: 1.2rem;
+    width: 20rem;
   }
 
   div.flip-card-back > a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     box-shadow: none;
     color: #fff;
     align-self: center;
@@ -220,6 +220,29 @@ div.flip-card-front {
     background-color: #ac6c53;
   }
 }
+@media (min-width: 450px) {
+  :root {
+    --project-fc-size: 13rem;
+  }
+  main.projects-box {
+    grid-template-columns: 50% 50%;
+    align-items: end;
+    width: 28rem;
+    row-gap: 1rem;
+  }
+  p.projects-head-title.subtitle {
+    width: 23rem;
+  }
+  .projects-head-title,
+  .projects-img {
+    font-size: 1.4rem;
+    width: 27rem;
+  }
+
+  div.flip-card-back > a {
+    font-size: 1.5rem;
+  }
+}
 @media (min-width: 780px) {
   :root {
     --project-fc-size: 22.5rem;
@@ -242,7 +265,7 @@ div.flip-card-front {
   }
 
   div.flip-card-back > a {
-    font-size: 2rem;
+    font-size: 2.5rem;
     box-shadow: none;
     color: #fff;
     align-self: center;

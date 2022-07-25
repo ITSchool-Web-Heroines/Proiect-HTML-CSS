@@ -141,9 +141,10 @@ p.project-text {
   border: 0.05rem solid #000;
   text-decoration: none;
   text-transform: uppercase;
-  transition-property: transform;
+  transition-property: transform, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
+  box-shadow: none;
 }
 a.btn-projects {
   margin-block-end: 1rem;
@@ -151,6 +152,7 @@ a.btn-projects {
 .btn-services:hover,
 .btn-projects:hover {
   transform: scale(110%);
+  box-shadow: 0rem 0.05rem 0.2rem #ccc;
 }
 h2.content-title {
   margin-block: 0.5rem;
@@ -211,7 +213,10 @@ section.projects-box {
     margin: 0rem;
   }
   main.content-box {
-    padding: 1.5rem;
+    width: 90vw;
+    margin-inline: auto;
+    margin-block: 0rem 1rem;
+    padding: 1rem;
     border-block-end: 0.03rem solid #cccccc;
   }
 }
@@ -220,8 +225,11 @@ section.projects-box {
     flex-direction: row;
     align-items: flex-start;
   }
-  div.content {
-    width: 30rem;
+  .content-box {
+    justify-content: space-evenly;
+  }
+  p.content-text {
+    width: 13rem;
   }
   h2.subtitle,
   h2.services-subtitle {
@@ -253,9 +261,10 @@ section.projects-box {
   h2.content-title {
     font-size: 2rem;
   }
-  .project-content {
-    width: 30rem;
+  p.content-text {
+    width: 17rem;
   }
+
   main.content-box {
     gap: 2rem;
   }
