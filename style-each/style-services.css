@@ -29,13 +29,13 @@ main section {
 h2.services-title {
   box-shadow: inset 0rem -0.7rem 0rem -0.6rem rgb(45, 45, 45);
   padding: 0;
-  line-height: 3rem;
   margin: 0;
+  line-height: 3rem;
 }
 .services-img,
 .services-head-box,
 h2.services-title {
-  animation: ani-services-img-title 1.5s ease-in 1 normal running;
+  animation: ani-services-img-title 750ms ease-in 1 normal running;
 }
 @keyframes ani-services-img-title {
   0% {
@@ -90,7 +90,7 @@ p.services-head-text {
   color: #000;
 }
 p.services-text {
-  animation: ani-services-content 2.5s ease-in 1 normal running;
+  animation: ani-services-content 1.25s ease-in 1 normal running;
 }
 @keyframes ani-services-content {
   0% {
@@ -118,6 +118,23 @@ p.services-text {
     z-index: -1;
     margin: 0;
   }
+  main::before {
+    content: "";
+    position: absolute;
+    transform: translate(0px, 199px);
+    width: 0.2rem;
+    height: 102rem;
+    background-color: #000;
+    animation: ani-line 3s ease-in 1 normal;
+  }
+  @keyframes ani-line {
+    0% {
+      height: 0rem;
+    }
+    100% {
+      height: 102rem;
+    }
+  }
   .services-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -133,20 +150,12 @@ p.services-text {
     box-shadow: none;
   }
   p.services-text {
-    border-inline-start: 0.2rem solid black;
     margin: 0;
     padding-block: 1rem;
-    padding-inline: 1rem 0rem;
-    width: 22rem;
+    padding-inline: 1rem 1rem;
+    width: 20rem;
   }
-  p.services-text::before {
-    content: "";
-    position: absolute;
-    transform: translate(-45.5px, -23px);
-    width: 1rem;
-    height: 1rem;
-    background-color: #000;
-  }
+
   .services-head.box {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -160,7 +169,7 @@ p.services-text {
     grid-row: 2/3;
   }
   .services-title.two {
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 3/4;
   }
   .services-title.three {
@@ -168,7 +177,7 @@ p.services-text {
     grid-row: 4/5;
   }
   .services-title.four {
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 5/6;
   }
   #dde,
@@ -178,7 +187,7 @@ p.services-text {
   }
   #spg,
   p.services-text.two {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 3/4;
   }
   #ep,
@@ -188,7 +197,7 @@ p.services-text {
   }
   #sd,
   p.services-text.four {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 5/6;
   }
   #dde {
@@ -205,16 +214,24 @@ p.services-text {
   }
   img.services-img,
   .services-head-box {
-    animation: ani-services-img-title 500ms ease-in 1 normal running;
+    animation: ani-services-img-title 250ms ease-in 1 normal running;
   }
 }
 @media (min-width: 1024px) {
+  main::before {
+    content: "";
+    position: absolute;
+    transform: translate(0px, 240px);
+    width: 0.2rem;
+    height: 127rem;
+    background-color: #000;
+  }
   .services-content {
     width: 55rem;
     margin: auto;
   }
   p.services-text {
-    width: 28rem;
+    width: 25rem;
   }
   .services-head-text,
   .services-text {
@@ -234,32 +251,5 @@ p.services-text {
   }
   .services-img {
     max-width: 29rem;
-  }
-}
-@media (min-width: 1600px) {
-  .services-content {
-    width: 95rem;
-  }
-  p.services-head-text {
-    width: 38rem;
-  }
-  p.services-text {
-    width: 43rem;
-  }
-  p.services-text {
-    padding-inline: 2rem;
-  }
-  p.services-text::before {
-    width: 1.5rem;
-    height: 1.5rem;
-    transform: translate(-45.5px, -23px);
-  }
-  .services-head-text,
-  .services-text {
-    font-size: 1.7rem;
-    text-align: justify;
-  }
-  p.services-head-text {
-    max-width: 49rem;
   }
 }

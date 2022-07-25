@@ -1,10 +1,9 @@
 :root {
-  --bg-color-logo-menu: #fff;
-  --box-shadow-logo-menu: #000;
-  --position-logo-menu: none;
-  --color-menu-item: #000;
-  --text-shadow-menu-item: #fff;
-  --box-shadow-submenu: 7px 0px 5px -3px rgba(47, 47, 47, 0.2),
-    0px 8px 7px -3px rgba(47, 47, 47, 0.2),
-    -7px 0px 5px -3px rgba(47, 47, 47, 0.2);
+  --bg-color-logo-menu: transparent;
+  --box-shadow-logo-menu: #fff;
+  --position-logo-menu: absolute;
+  --color-menu-item: #fff;
+  --text-shadow-menu-item: #000;
+  --box-shadow-submenu: 0rem 0.3rem 0.5rem 0rem #fff;
+  --bg-project: url("../img-projects/h-cover.jpg");
 }

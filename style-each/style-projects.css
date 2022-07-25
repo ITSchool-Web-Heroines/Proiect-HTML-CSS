@@ -46,7 +46,7 @@ div.projects-head-box {
 }
 p.projects-head-title.subtitle {
   width: 16rem;
-  animation: ani-services-img-title 1s ease-in 1 normal running;
+  animation: ani-services-img-title 500ms ease-in 1 normal running;
 }
 div.flip-card-back > a {
   text-decoration: none;
@@ -66,7 +66,7 @@ div.flip-card-all {
   align-items: center;
 }
 .projects-head-box {
-  animation: ani-services-img-title 1s ease-in 1 normal running;
+  animation: ani-services-img-title 500ms ease-in 1 normal running;
 }
 @keyframes ani-services-img-title {
   0% {
@@ -92,7 +92,7 @@ div.flip-card-all {
 }
 div.flip-card-back > a,
 div.flip-card-front {
-  animation: ani-services-content 2s ease-in 1 normal running;
+  animation: ani-services-content 1.25s ease-in 1 normal running;
 }
 @keyframes ani-services-content {
   0% {
