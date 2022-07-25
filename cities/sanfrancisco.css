@@ -1,0 +1,484 @@
+body {
+  background-image: url("../background.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#header {
+  height: 400px;
+  aspect-ratio: auto 1080 / 600;
+  width: 95%;
+  display: block;
+  margin-block-start: 0.5rem;
+  margin-inline-start: 2rem;
+  margin-inline-end: 2rem;
+}
+.menu {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background: #103d50;
+  text-align: center;
+  box-sizing: border-box;
+  border-block: 3px solid white;
+}
+.menu ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.menu ul li {
+  width: 120px;
+  margin-inline: 5px;
+  padding-inline: 15px;
+}
+.menu ul li a {
+  font-family: fantasy;
+  text-decoration: none;
+  color: white;
+}
+.home,
+.menu ul li :hover {
+  background: #22799e;
+  border-radius: 1px;
+}
+.sub-menu-1 {
+  display: none;
+}
+.menu ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background: #22799e;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.menu ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+}
+.menu ul li:hover .sub-menu-1 ul li {
+  width: 100px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
+}
+.menu ul li:hover .sub-menu-1 ul li a:hover {
+  color: #82c1db;
+}
+.sub-menu-2 {
+  display: none;
+}
+.menu ul li:hover .sub-menu-2 {
+  display: block;
+  position: absolute;
+  background: #22799e;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.menu ul li:hover .sub-menu-2 ul {
+  display: block;
+  margin: 10px;
+}
+.menu ul li:hover .sub-menu-2 ul li {
+  width: 100px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu ul li:hover .sub-menu-2 ul li:last-child {
+  border-bottom: none;
+}
+.menu ul li:hover .sub-menu-2 ul li a:hover {
+  color: #82c1db;
+}
+.sub-menu-3 {
+  display: none;
+}
+.menu ul li:hover .sub-menu-3 {
+  display: block;
+  position: absolute;
+  background: #22799e;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.menu ul li:hover .sub-menu-3 ul {
+  display: block;
+  margin: 10px;
+}
+.menu ul li:hover .sub-menu-3 ul li {
+  width: 100px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu ul li:hover .sub-menu-3 ul li:last-child {
+  border-bottom: none;
+}
+.menu ul li:hover .sub-menu-3 ul li a:hover {
+  color: #82c1db;
+}
+.sub-menu-4 {
+  display: none;
+}
+.menu ul li:hover .sub-menu-4 {
+  display: block;
+  position: absolute;
+  background: #22799e;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.menu ul li:hover .sub-menu-4 ul {
+  display: block;
+  margin: 10px;
+}
+.menu ul li:hover .sub-menu-4 ul li {
+  width: 100px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu ul li:hover .sub-menu-4 ul li:last-child {
+  border-bottom: none;
+}
+.menu ul li:hover .sub-menu-4 ul li a:hover {
+  color: #82c1db;
+}
+.sub-menu-5 {
+  display: none;
+}
+.menu ul li:hover .sub-menu-5 {
+  display: block;
+  position: absolute;
+  background: #22799e;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.menu ul li:hover .sub-menu-5 ul {
+  display: block;
+  margin: 10px;
+}
+.menu ul li:hover .sub-menu-5 ul li {
+  width: 100px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu ul li:hover .sub-menu-5 ul li:last-child {
+  border-bottom: none;
+}
+.menu ul li:hover .sub-menu-5 ul li a:hover {
+  color: #82c1db;
+}
+#container {
+  background-color: #103d50;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  padding-inline: 3rem;
+  border-block: 3px solid white;
+  border-inline: 3px solid white;
+  display: grid;
+  grid-template-columns: (6, 1fr);
+  grid-template-rows: (6, 1fr);
+}
+.title {
+  margin-block-start: 2rem;
+  font-size: 40px;
+  font-family: fantasy;
+  color: white;
+  grid-column: 1 / 3;
+  grid-row: 1 / span 2;
+}
+.content {
+  display: grid;
+  border-block-start: 1px solid white;
+}
+
+h3 {
+  font-size: 25px;
+  ont-family: fantasy;
+  color: white;
+  text-decoration: underline;
+  margin-block-end: 0px;
+}
+p {
+  font-size: 20px;
+  ont-family: fantasy;
+  color: white;
+  text-decoration: none;
+  grid-column: ;
+}
+.introduction {
+  order: 0;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.image {
+  width: 500px;
+  height: 300px;
+  order: 1;
+  grid-coulmn: 2/3;
+  grid-row: 1/3;
+}
+.hsciences {
+  order: 2;
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+.sciences {
+  order: 3;
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+.hgolden {
+  order: 4;
+  grid-column: 1/3;
+  grid-row: 5/6;
+}
+.golden {
+  order: 5;
+  grid-column: 1/3;
+  grid-row: 6/7;
+}
+.hgoldenp {
+  order: 6;
+  grid-column: 1/3;
+  grid-row: 7/8;
+}
+.goldenp {
+  order: 7;
+  grid-column: 1/3;
+  grid-row: 8/9;
+}
+.hyerba {
+  order: 8;
+  grid-column: 1/3;
+  grid-row: 9/10;
+}
+.yerba {
+  order: 9;
+  grid-column: 1/3;
+  grid-row: 11/12;
+}
+.halcatraz {
+  order: 10;
+  grid-column: 1/3;
+  grid-row: 12/13;
+}
+.alcatraz {
+  order: 11;
+  grid-column: 1/3;
+  grid-row: 13/14;
+}
+.hcable {
+  order: 12;
+  grid-column: 1/3;
+  grid-row: 14/15;
+}
+.cable {
+  order: 13;
+  grid-column: 1/3;
+  grid-row: 15/16;
+}
+.htwin {
+  order: 14;
+  grid-column: 1/3;
+  grid-row: 16/17;
+}
+.twin {
+  order: 15;
+  grid-column: 1/3;
+  grid-row: 17/18;
+}
+.hcastro {
+  order: 16;
+  grid-column: 1/3;
+  grid-row: 18/19;
+}
+.castro {
+  order: 17;
+  grid-column: 1/3;
+  grid-row: 19/20;
+}
+.hbaker {
+  order: 18;
+  grid-column: 1/3;
+  grid-row: 20/21;
+}
+.baker {
+  order: 19;
+  grid-column: 1/3;
+  grid-row: 21/22;
+}
+.hferry {
+  order: 20;
+  grid-column: 1/3;
+  grid-row: 22/23;
+}
+.ferry {
+  order: 21;
+  grid-column: 1/3;
+  grid-row: 24/25;
+}
+.hchina {
+  order: 22;
+  grid-column: 1/3;
+  grid-row: 25/26;
+}
+.china {
+  order: 23;
+  grid-column: 1/3;
+  grid-row: 27/28;
+}
+.hunion {
+  order: 24;
+  grid-column: 1/3;
+  grid-row: 28/29;
+}
+.union {
+  order: 25;
+  grid-column: 1/3;
+  grid-row: 29/30;
+}
+.hlombard {
+  order: 26;
+  grid-column: 1/3;
+  grid-row: 30/31;
+}
+.image2 {
+  order: 28;
+  width: 500px;
+  height: 300px;
+  grid-column: 2/3;
+  grid-row: 31/32;
+}
+.lombard {
+  order: 27;
+  grid-column: 1/2;
+  grid-row: 31/32;
+}
+.hland {
+  order: 29;
+  grid-column: 1/3;
+  grid-row: 32/33;
+}
+.land {
+  order: 30;
+  grid-column: 1/3;
+  grid-row: 33/34;
+}
+.hfisherman {
+  order: 31;
+  grid-column: 1/3;
+  grid-row: 34/35;
+}
+.fisherman {
+  order: 32;
+  grid-column: 1/2;
+  grid-row: 35/36;
+}
+.hdisney {
+  order: 34;
+  grid-column: 1/3;
+  grid-row: 36/37;
+}
+.disney {
+  order: 34;
+  grid-column: 1/3;
+  grid-row: 37/38;
+}
+
+.image3 {
+  order: 33;
+  width: 500px;
+  height: 300px;
+  grid-column: 2/3;
+  grid-row: 35/36;
+}
+#footer {
+  inset-block-end: 0rem;
+  text-align: center;
+  color: black;
+  font-weight: 2rem;
+  font-size: 20px;
+}
+@media (max-width: 992px) {
+  #header {
+    width: 93.5%;
+  }
+  .menu {
+    width: 93.5%;
+    text-align: center;
+  }
+  .menu ul li {
+    width: 100px;
+    margin-inline: 5px;
+    padding-inline: 15px;
+  }
+  .menu ul li a {
+    font-family: fantasy;
+    text-decoration: none;
+    color: white;
+  }
+}
+@media (max-width: 768px) {
+  #header {
+    width: 91.5%;
+  }
+  .menu {
+    width: 91.5%;
+  }
+  .menu ul li {
+    width: 40px;
+    margin-inline: 5px;
+    padding-inline: 15px;
+  }
+  .menu ul li a {
+    font-family: fantasy;
+    text-decoration: none;
+    color: white;
+  }
+}
+@media (max-width: 576px) {
+  #header {
+    height: 250px;
+    width: 480px;
+  }
+  .menu {
+    width: 88.5%;
+    text-align: center;
+    box-sizing: border-box;
+    border-block: 3px solid white;
+  }
+  .menu ul li {
+    width: 5px;
+    margin-inline: 12px;
+  }
+  .menu ul li a {
+    font-family: fantasy;
+    text-decoration: none;
+    color: white;
+  }
+  .image {
+    height: 200px;
+    width: 250px;
+  }
+  .image2 {
+    height: 200px;
+    width: 250px;
+  }
+  .image3 {
+    height: 200px;
+    width: 250px;
+  }
