@@ -34,7 +34,7 @@ header {
   position: relative;
 }
 
-.menu-item:after {
+.menu-item::after {
   content: "";
   position: absolute;
   background-color: #bdad22;
@@ -45,7 +45,7 @@ header {
   transition: 0.3s;
 }
 
-.menu-item:hover:after {
+.menu-item:hover::after {
   width: 100%;
 }
 
@@ -83,7 +83,8 @@ header {
   animation-delay: 1.5s;
 }
 
-.page-title span {
+.page-title::after {
+  content: "";
   position: absolute;
   inset-block-start: 0;
   inset-inline-start: 0;
