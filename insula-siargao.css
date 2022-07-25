@@ -6,3 +6,6 @@
   --color4: #283f35;
   --title: 2rem;
 }
+.nav {
+  padding-block-start: 0.1rem;
+}

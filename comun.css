@@ -25,6 +25,7 @@ body {
 
 .menu-item {
   position: relative;
+  text-transform: uppercase;
 }
 
 .menu-item:after {
