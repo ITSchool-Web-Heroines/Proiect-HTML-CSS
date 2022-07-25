@@ -270,43 +270,6 @@ section.projects-box {
     max-width: 30rem;
   }
 }
-@media (min-width: 1600px) {
-  .banner .title h1 {
-    font-size: 5rem;
-  }
-  p.subtext,
-  p.content-text,
-  p.project-text {
-    font-size: 2.5rem;
-  }
-  p.subtext {
-    width: 25rem;
-  }
-  .banner .title h1 {
-    font-size: rem;
-  }
-  h2.content-title {
-    font-size: 3rem;
-    font-weight: 900;
-  }
-  h2.subtitle,
-  h2.services-subtitle,
-  .subtitle div.brand {
-    font-size: 3.5rem;
-  }
-  .btn-services,
-  .btn-projects {
-    font-size: 1.8rem;
-    padding: 1rem;
-    margin: 1rem;
-  }
-  .project-content {
-    width: 50rem;
-  }
-  p.subtext {
-    width: 35rem;
-  }
-}
 /* Responsive Mobile Horizontal */
 @media (max-width: 780px) and (max-height: 500px) and (orientation: landscape) {
   .banner .title h1 {
