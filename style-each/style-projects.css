@@ -44,6 +44,10 @@ div.projects-head-box {
   text-align: center;
   padding-inline: 1rem;
 }
+p.projects-head-title.subtitle {
+  width: 16rem;
+  animation: ani-services-img-title 1s ease-in 1 normal running;
+}
 div.flip-card-back > a {
   text-decoration: none;
   font-family: "lemonmilk", sans-serif;
@@ -125,13 +129,19 @@ div.flip-card-front {
     grid-row: 1/2;
     margin-block: 1rem 0rem;
   }
+  p.projects-head-title.subtitle {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    width: 23rem;
+  }
   .projects-head-title,
   .projects-img {
     font-size: 1.4rem;
-    width: 30rem;
+    width: 27rem;
   }
+
   div.flip-card-back > a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     box-shadow: none;
     color: #fff;
     align-self: center;
@@ -157,22 +167,22 @@ div.flip-card-front {
   .flip-card-front.one,
   .flip-card-back.one {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 3/4;
   }
   .flip-card-front.two,
   .flip-card-back.two {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/4;
   }
   .flip-card-front.three,
   .flip-card-back.three {
     grid-column: 1/2;
-    grid-row: 3/4;
+    grid-row: 4/5;
   }
   .flip-card-front.four,
   .flip-card-back.four {
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 4/5;
   }
   div.flip-card-all {
     display: block;
@@ -219,11 +229,11 @@ div.flip-card-front {
     row-gap: 1rem;
   }
   div.projects-head-box {
-    grid-column: 1/3;
-    grid-row: 1/2;
-    margin-block: 1rem 0rem;
     flex-direction: row;
     width: 46rem;
+  }
+  p.projects-head-title.subtitle {
+    width: 27rem;
   }
   .projects-head-title,
   .projects-img {

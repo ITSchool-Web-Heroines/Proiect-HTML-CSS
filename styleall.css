@@ -94,9 +94,21 @@ body::-webkit-scrollbar-thumb {
   box-shadow: var(--box-shadow-submenu);
   visibility: hidden;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 500ms;
   width: 7rem;
   transform: translateX(-1.2rem);
+}
+.menu li:hover .sub-menu,
+.menu ul.sub-menu:hover {
+  visibility: visible;
+  opacity: 1;
+  z-index: 5;
+}
+.menu li:focus .sub-menu,
+.menu li:focus-within .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 5;
 }
 .sub-menu li a {
   display: block;
@@ -111,21 +123,11 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   text-align: center;
   transition-property: box-shadow;
-  transition-duration: 200ms;
+  transition-duration: 150ms;
   transition-timing-function: ease-in-out;
 }
 .sub-menu li a:hover {
   box-shadow: inset 0rem -0.7rem 0rem -0.6rem #ccc;
-}
-
-.menu li:hover .sub-menu {
-  visibility: visible;
-  opacity: 1;
-}
-.menu li:focus .sub-menu,
-.menu li:focus-within .sub-menu {
-  visibility: visible;
-  opacity: 1;
 }
 /* Footer */
 .footer-box {
@@ -206,6 +208,25 @@ p.copyright {
   padding-block: 1rem;
   text-align: center;
 }
+/* Back Top */
+.back-top {
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  position: fixed;
+  inset-block-end: 1%;
+  inset-inline-end: 3%;
+  z-index: 10;
+  opacity: 50%;
+}
+.back-top-btn,
+.back-top-btn > img {
+  text-decoration: none;
+  width: 3rem;
+}
+.back-top:hover {
+  opacity: 100%;
+}
 @media (min-width: 780px) {
   .logo-menu {
     flex-direction: row;
@@ -226,6 +247,7 @@ p.copyright {
     margin-block: 0.5rem 0rem;
   }
   .menu > li > .menu-item {
+    padding: 1.7rem 0;
     margin: 0;
     font-size: 2rem;
   }
