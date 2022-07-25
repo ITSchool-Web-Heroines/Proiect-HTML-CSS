@@ -34,7 +34,7 @@
   width: 100vw;
 }
 .banner .title h1 {
-  font-family: "modern";
+  font-family: "modern", sans-serif;
   font-variant-ligatures: none;
   margin: 0;
   padding: 0;
