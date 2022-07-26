@@ -194,6 +194,11 @@ div.flip-card-front {
     transform: rotateY(180deg);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
+  .flip-card:focus .flip-card-all,
+  .flip-card:focus-within .flip-card-all {
+    transform: rotateY(180deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
   .flip-card-all {
     position: relative;
     width: 100%;
