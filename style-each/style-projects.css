@@ -1,4 +1,5 @@
 :root {
+  --drop-shadow-logo: drop-shadow(0rem 0rem 0rem transparent);
   --bg-color-logo-menu: #fff;
   --box-shadow-logo-menu: #000;
   --position-logo-menu: none;
