@@ -220,7 +220,7 @@ p.copyright {
 .back-top:hover {
   opacity: 100%;
 }
-@media (min-width: 425px) {
+@media (min-width: 550px) {
   .menu > li > .menu-item {
     font-size: 1.2rem;
   }

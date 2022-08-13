@@ -101,7 +101,7 @@ ul.menu > li > .menu-item {
   height: 18rem;
 }
 .intro-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "modern", sans-serif;
   font-weight: 900;
   margin: 0;
@@ -114,25 +114,25 @@ ul.menu > li > .menu-item {
 .intro-info-box p,
 .content-box > p {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "modern", sans-serif;
   font-weight: 600;
   margin: 0;
   padding: 0rem 1rem;
 }
 .intro-info-text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: justify;
   font-family: "modern", sans-serif;
-  font-weight: 600;
   padding: 0.5rem 1rem;
   margin: 0;
 }
-
 p.content-subtext.one,
 p.content-subtext.two,
 p.content-subtext.three {
   animation: ani-text-img 2s ease-in 1 normal;
+  font-weight: 400;
+  font-size: 1rem;
 }
 .plan-img {
   width: 100vw;
@@ -166,7 +166,12 @@ main img {
 
 @media (min-width: 550px) {
   .banner-projects .title h1 {
-    font-size: 4.7rem;
+    font-size: 2.8rem;
+  }
+  p.content-subtext.one,
+  p.content-subtext.two,
+  p.content-subtext.three {
+    font-size: 1.2rem;
   }
   .intro-box {
     display: grid;
@@ -178,7 +183,7 @@ main img {
   .intro-box::before {
     content: "";
     position: absolute;
-    transform: translate(0rem, 15.5rem);
+    transform: translate(0rem, 15.3rem);
     width: 30rem;
     height: 0.15rem;
     background-color: #000;
@@ -251,9 +256,9 @@ main img {
     grid-row: 2/3;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .banner-projects .title h1 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .intro-box {
     grid-template-columns: 1fr 1fr 1fr;
@@ -266,11 +271,11 @@ main img {
   }
   .intro-title {
     position: relative;
-    transform: translate(0rem, -10rem);
+    transform: translate(0rem, -11rem);
   }
   .intro-info-box {
     position: relative;
-    transform: translate(0rem, 5rem);
+    transform: translate(0rem, 6rem);
   }
   .intro-logo {
     grid-row: 1/2;
@@ -283,7 +288,7 @@ main img {
   }
   .intro-box::before {
     width: 45rem;
-    transform: translate(0rem, 16rem);
+    transform: translate(0rem, 17.5rem);
     animation: ani-linew 3s ease-in-out 1 normal;
   }
   @keyframes ani-linew {
@@ -311,7 +316,7 @@ main img {
   p.content-subtext.one {
     grid-column: 1/4;
     grid-row: 3/4;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .switch-item {
     grid-column: 3/4;
@@ -343,63 +348,8 @@ main img {
     text-align: justify;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1450px) {
   .banner-projects .title h1 {
-    font-size: 5.5rem;
-  }
-  .intro-logo,
-  .content-box > img {
-    width: 20rem;
-    height: 20rem;
-  }
-
-  .intro-box,
-  .intro-box::before,
-  .content-box.one,
-  .content-box.two,
-  .content-box.three,
-  .content-box.one::before {
-    width: 60rem;
-  }
-  .intro-box::before {
-    transform: translate(0rem, 21rem);
-    animation: ani-linew 3s ease-in-out 1 normal;
-  }
-  .content-box.one::before {
-    transform: translate(0rem, 22.5rem);
-    animation: ani-linew 3s ease-in-out 1 normal;
-  }
-  @keyframes ani-linew {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 60rem;
-    }
-  }
-  .intro-info-text {
-    font-size: 1.6rem;
-  }
-  .intro-info-box p,
-  .content-box > p {
-    font-size: 2rem;
-  }
-  .intro-info-box {
-    transform: translate(0rem, 8rem);
-  }
-  .intro-title {
     font-size: 4rem;
-    transform: translate(0rem, -12rem);
-  }
-  p.content-subtext.two,
-  p.content-subtext.three {
-    padding: 0rem 0.5rem;
-    padding-block-start: 5rem;
-    font-size: 1.4rem;
-    width: 18rem;
-    text-align: justify;
-  }
-  p.content-subtext.one {
-    font-size: 1.9rem;
   }
 }

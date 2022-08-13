@@ -37,12 +37,11 @@ div.projects-head-box {
   width: 90vw;
   margin-block: 1rem;
 }
-.projects-head-title {
+p.projects-head-title {
   font-family: "modern", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
   text-align: center;
-  padding-inline: 1rem;
+  padding-block: 1rem;
 }
 p.projects-head-title.subtitle {
   width: 16rem;
@@ -51,7 +50,7 @@ p.projects-head-title.subtitle {
 div.flip-card-back > a {
   text-decoration: none;
   font-family: "lemonmilk", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   text-align: center;
   color: #000;
@@ -225,7 +224,7 @@ div.flip-card-front {
     background-color: #ac6c53;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 550px) {
   :root {
     --project-fc-size: 13rem;
   }
@@ -234,6 +233,9 @@ div.flip-card-front {
     align-items: end;
     width: 28rem;
     row-gap: 1rem;
+  }
+  p.projects-head-title {
+    font-size: 1.2rem;
   }
   p.projects-head-title.subtitle {
     width: 23rem;
@@ -248,7 +250,7 @@ div.flip-card-front {
     font-size: 1.5rem;
   }
 }
-@media (min-width: 780px) {
+@media (min-width: 800px) {
   :root {
     --project-fc-size: 22.5rem;
   }
