@@ -31,14 +31,13 @@
   z-index: 1;
   margin: 0 auto;
   text-align: center;
-  width: 100vw;
+  width: 80vw;
 }
 .banner .title h1 {
-  font-family: "modern", sans-serif;
-  font-variant-ligatures: none;
+  font-family: "lemonmilk", sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 3.7rem;
+  font-size: 2.3rem;
   text-transform: uppercase;
   color: #fff;
   text-shadow: 0.1rem 0rem 0.08rem #000;
@@ -90,8 +89,7 @@
 h2.subtitle,
 h2.services-subtitle {
   font-family: "modern", sans-serif;
-  font-variant-ligatures: none;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 100%;
   text-align: center;
 }
@@ -104,20 +102,13 @@ h2.subtitle {
 h2.services-subtitle {
   margin: 0.7rem;
 }
-.subtitle div.brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-}
+
 p.subtext,
 p.content-text,
 p.project-text {
   font-family: "modern", sans-serif;
-  font-variant-ligatures: none;
   font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 85%;
+  font-weight: 500;
   margin: 0rem;
   padding: 0.5rem;
   text-align: center;
@@ -130,10 +121,8 @@ p.project-text {
 .btn-services,
 .btn-projects {
   font-family: "modern", sans-serif;
-  font-variant-ligatures: none;
   font-size: 1rem;
-  font-weight: 700;
-  line-height: 100%;
+  font-weight: 600;
   color: #000;
   background: transparent;
   padding: 0.5rem;
@@ -151,13 +140,18 @@ a.btn-projects {
 }
 .btn-services:hover,
 .btn-projects:hover {
-  transform: scale(110%);
-  box-shadow: 0rem 0.05rem 0.2rem #ccc;
+  transform: scale(120%);
+  box-shadow: 0rem 0.05rem 0.2rem #171717;
+}
+.btn-services:focus,
+.btn-services:focus-within,
+.btn-projects:focus,
+.btn-projects:focus-visible {
+  transform: scale(120%);
 }
 h2.content-title {
   margin-block: 0.5rem;
   font-family: "lemonmilk", sans-serif;
-  font-variant-ligatures: none;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -173,25 +167,25 @@ section.projects-box {
   align-items: center;
 }
 /* Responsive */
-@media (min-width: 489px) {
+@media (min-width: 425px) {
   .banner .title h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   p.subtext,
   p.content-text,
   p.project-text {
-    font-size: 1.4rem;
-  }
-  .btn-services,
-  .btn-projects {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   h2.subtitle,
-  h2.services-subtitle {
-    font-size: 1.8rem;
+  h2.services-subtitle,
+  h2.content-title {
+    font-size: 1.7rem;
   }
 }
-@media (min-width: 640px) {
+@media (min-width: 550px) {
+  .banner .title {
+    width: 55vw;
+  }
   p.subtext {
     width: 13rem;
   }
@@ -220,7 +214,13 @@ section.projects-box {
     border-block-end: 0.03rem solid #cccccc;
   }
 }
-@media (min-width: 780px) {
+@media (min-width: 800px) {
+  .banner .title {
+    width: 95vw;
+  }
+  .banner .title h1 {
+    font-size: 2.8rem;
+  }
   main.content-box {
     flex-direction: row;
     align-items: flex-start;
@@ -232,73 +232,72 @@ section.projects-box {
     width: 13rem;
   }
   h2.subtitle,
-  h2.services-subtitle {
-    font-size: 2rem;
+  h2.services-subtitle,
+  h2.content-title {
+    font-size: 1.9rem;
   }
   p.subtext {
     width: 18rem;
   }
   p.subtext,
   p.project-text {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     padding: 0.8rem;
+  }
+  section.projects-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  img.project-plan {
+    width: 30vw;
+    margin: 0rem;
   }
   .btn-services,
   .btn-projects {
-    font-weight: 900;
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: 0.8rem;
     margin: 0.8rem;
   }
 }
 @media (min-width: 1024px) {
-  div.future-subtitle {
-    gap: 10rem;
+  .banner .title h1 {
+    font-size: 3rem;
   }
   h2.subtitle,
   h2.services-subtitle,
-  .subtitle div.brand,
   h2.content-title {
     font-size: 2rem;
   }
   p.content-text {
-    width: 17rem;
+    width: 18rem;
   }
-
+  p.project-text {
+    width: 24rem;
+  }
+  p.subtext,
+  p.project-text {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+  .btn-services,
+  .btn-projects {
+    font-size: 1.2rem;
+  }
   main.content-box {
-    gap: 2rem;
+    width: 60rem;
   }
   section.projects-box {
-    flex-direction: row-reverse;
     margin-inline: 1rem;
     padding-inline: 1rem;
     justify-content: center;
   }
+  img.project-plan {
+    width: 19rem;
+    height: auto;
+  }
   .subtitle-image {
     width: 55vw;
     max-width: 30rem;
-  }
-}
-/* Responsive Mobile Horizontal */
-@media (max-width: 780px) and (max-height: 500px) and (orientation: landscape) {
-  .banner .title h1 {
-    font-size: 1.8rem;
-  }
-  .banner .title {
-    margin-block-start: 3rem;
-  }
-  .sm-icon {
-    width: 1.4rem;
-  }
-}
-@media (max-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
-  .banner .title h1 {
-    font-size: 2.5rem;
-  }
-  .banner .title {
-    margin-block-start: 3rem;
-  }
-  .sm-icon {
-    width: 1.5rem;
   }
 }
