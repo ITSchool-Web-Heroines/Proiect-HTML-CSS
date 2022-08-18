@@ -281,3 +281,14 @@ p.services-text {
     animation: ani-services-img-title 250ms ease-in 1 normal running;
   }
 }
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+  .menu > li > .menu-item {
+    padding: 1rem 0;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .sub-menu li a {
+    font-size: 0.8rem;
+  }
+}
