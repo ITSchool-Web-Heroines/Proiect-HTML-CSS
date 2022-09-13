@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="gallery.css"/>
+    <link rel="stylesheet" href="about.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Ibarra+Real+Nova:ital@1&family=Lato&display=swap" rel="stylesheet">
@@ -13,8 +13,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Artă nouă și veche</title>
+    
   </head>
   <body>
+    <button id="go-back">&#8701;</button>
+    <button id="go-forward">&#8702;</button>
+    <button id="myBtn" title="Go to top">Top</button>
     <header class="header-bar">
       <a href="#" class="logo-link"><img src="logo/Artă nouă și veche-logo.png" alt="logo Artă nouă și veche" class="logo-img"/></a>
       <nav class="nav-bar small">
@@ -47,27 +51,22 @@
       </nav>
     </header>
     <main>
-      <h1 class="subtitle gallery-title">Galerie</h1>
-      <div class="gallery-pattern">
-        <img src="images/statuie.jpg" alt="statuie barbat" class="img-gallery img-1"/>
-        <h3 class="img-title-gallery title-1">David of Michelangelo</h3>
-        <p class="text-gallery text-1">David este o sculptură, capodoperă a Renașterii, creată între 1501 și 1504 de artistul italian Michelangelo. Este o statuie de marmură albă care măsoară 4,34 metri a unui bărbat nud. Statuia îl reprezintă pe eroul biblic David.</p>
-        <img src="images/new-art-4.jpg" alt="oameni care privesc mai multe tablouri" class="img-gallery img-2"/>
-        <h3 class="img-title-gallery title-2">Expoziție de artă modernă</h3>
-        <p class="text-gallery text-2">Imaginea este o fotografie realizată în cadrul unei expoziții de artă modernă, având în plan principal doi oameni care sunt atenți la detaliile din imaginile expuse.</p>
-        <img src="images/greek-art.jpg" alt="Portret de femeie" class="img-gallery img-3"/>
-        <h3 class="img-title-gallery title-3">"Pălăria de paie" de Nikos Lytras</h3>
-        <p class="text-gallery text-3">Acest tablou este unul dintre cele mai impresionante și dragi lucrări ale modernismului grecesc.Oferit de Galeria Națională a Muzeului Alexandros Soutsos.</p>
-        <img src="images/new-art-6.jpg" alt="Pictura cu o femeie in prim-plan" class="img-gallery img-4"/>
-        <h3 class="img-title-gallery title-4">Art Deco din perioada 1920-1930</h3>
-        <p class="text-gallery text-4">Art Deco a combinat stilurile moderne cu măiestria fină și materialele bogate. În perioada sa de glorie, a reprezentat lux, glamour, exuberanță și credință în progresul social și tehnologic.</p>
-        <img src="images/fetita.jpg" alt="Pictura cu o fetita in camp" class="img-gallery img-5"/>
-        <h3 class="img-title-gallery title-5">O fată cu flori pe iarbă</h3>
-        <p class="text-gallery text-5">Creator: Maris, 1878. Instituția: Rijksmuseum, Olanda.</p>
-        <img src="images/pictura.jpg" alt="Pictura cu un peisaj montan" class="img-gallery img-6"/>
-        <h3 class="img-title-gallery title-6">Cascade de la Folie, Chamonix. Artist: John Ruskin</h3>
-        <p class="text-gallery text-6">John Ruskin a fost un scriitor, critic de artă și filozof englez. Ruskin a exercitat o remarcabilă influență asupra cercurilor intelectuale ale Angliei din epoca victoriană.</p>
-      </div> 
+      <h1 class="subtitle about-title">Despre noi</h1>
+      <div class="about-flex">
+        <p class="about-text">Suntem o echipă mică dar motivată de oameni pasionați de artă și creativitate. Considerăm că arta ar trebui să aibă un loc semnificativ în viața fiecărui om și am început să promovăm imagini artistice din toată lumea, cu scopul de a trezi creativitatea în toți cei care accesează site-ul nostru. Vrem ca experiența să fie atât informațională/ educativă, cât și una de bucurie și inspirație. Sperăm că ne iese.</p>
+        <div class="all-about-img">
+          <img src="images/despre.jpg" alt="O femeie care picteaza" class="img-about"/>
+          <img src="images/despre-1.jpg" alt="O imagine in care cineva picteaza" class="img-about"/>
+          <img src="images/floare.jpg" alt="O pictura cu o floare" class="img-about"/>
+        </div>
+      </div>
+      <a href="contact.html" class="contact-btn">Contactează-ne</a>
+
+      <div class='draw'>
+        <h1>Dacă te simți inspirat...</h1>
+        <canvas id="myPics"></canvas>
+      </div>
+
       <ul class="line-icons social-list">
         <li class="list"><a href="https://www.instagram.com/" target=”_blank” class="social-icons"><svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
         width="16" height="16"
@@ -92,5 +91,6 @@
       </ul>
       <p class="copyright">&copy; 2022 by Alice Popescu</p>
     </footer>
-  </body>
-  </html>
+    </body>
+    <script type="module" src="script.js"></script>
+    </html>
