@@ -17,8 +17,7 @@
   </head>
   <body>
     <button id="go-back">&#8701;</button>
-    <button id="go-forward">&#8702;</button>
-    <button id="myBtn" title="Go to top">Top</button>
+    <button id="top-btn" title="Go to top">Top</button>
     <header class="header-bar">
       <a href="#" class="logo-link"><img src="logo/Artă nouă și veche-logo.png" alt="logo Artă nouă și veche" class="logo-img"/></a>
       <nav class="nav-bar small">
@@ -52,13 +51,20 @@
     </header>
     <main>
       <h1 class="subtitle gallery-title">Contact</h1>
-      <div class="contact-flex">
+      <div class="contact-grid">
         <address class="address">
           <a href="mailto:arta@gmail.com" class="email">arta@gmail.com</a><br>
           <a href="tel:+13115552368">(311) 555-2368</a>
         </address>
+        <form class="form">
+          <label class="email-label" for="em">Primește noutăți</label>
+          <input type="email" id="em" class="email"/>
+          <button type="submit" class="submit">Trimite</button>
+        </form>
+        <p id="log"></p>
         <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1HMo6q3eljWb3_tKcXuCP2TjCvnQ&hl=en&ehbc=2E312F" width="640" height="480"></iframe>
-      </div>       
+    
+    </div>       
         <ul class="line-icons social-list">
         <li class="list"><a href="https://www.instagram.com/" target=”_blank” class="social-icons"><svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
         width="16" height="16"
@@ -83,6 +89,6 @@
       </ul>
       <p class="copyright">&copy; 2022 by Alice Popescu</p>
     </footer>
+    <script type="module" src="contact.js"></script>
   </body>
-  <script type="module" src="script.js"></script>
   </html>
