@@ -25,7 +25,7 @@ let isDrawing = false;
 let x = 0;
 let y = 0;
 
-const myPics = document.getElementById("myPics");
+const myPics = document.getElementById("my-pics");
 const context = myPics.getContext("2d");
 
 // event.offsetX, event.offsetY gives the (x,y) offset from the edge of the canvas.

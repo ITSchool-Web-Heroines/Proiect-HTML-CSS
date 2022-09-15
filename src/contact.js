@@ -29,6 +29,7 @@ function formSub(ev) {
   ev.preventDefault();
 }
 form.addEventListener("submit", formSub);
+
 form.addEventListener(
   "focus",
   (ev) => {

@@ -245,8 +245,8 @@ footer {
   }
   canvas {
     border: 2px dashed purple;
-    width: 560px;
-    height: 360px;
+    /* width: 560px;
+    height: 360px; */
   }
   .footer-btn {
     font-size: 1.6rem;
