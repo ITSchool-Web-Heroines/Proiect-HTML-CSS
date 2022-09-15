@@ -1,6 +1,22 @@
-import { topBtn } from "./script";
-import { top } from "./script";
 import { back } from "./script";
+
+//Scroll up Button
+
+let topBtn = document.getElementById("top-btn");
+
+function visible() {
+  document.addEventListener("scroll", () => {
+    if (window.scrollY > innerHeight) {
+      topBtn.style.display = "block";
+    } else topBtn.style.display = "none";
+  });
+}
+visible();
+
+const top = topBtn.addEventListener("click", function () {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+});
 
 //Drawing box (About page)
 

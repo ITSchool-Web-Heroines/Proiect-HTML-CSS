@@ -82,16 +82,15 @@
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   font-size: 1.2rem;
-  border-block-end: 0.1rem solid #7f0f0f;
   width: 9rem;
   justify-self: center;
 }
-.email {
+.address-email,
+.phone {
   font-size: 0.8rem;
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
   border-block-end: 0.1rem solid #7f0f0f;
 }
+
 .address a {
   text-decoration: none;
   color: #000;
@@ -167,8 +166,13 @@ footer {
     grid-column: inherit;
     align-self: center;
   }
+  .address-email,
+  .phone {
+    font-size: 1.2rem;
+  }
   .map {
     width: 80%;
+    height: 60vw;
     justify-self: center;
     grid-row: 1 / 4;
     grid-column: 2 / 3;
@@ -187,7 +191,6 @@ footer {
     transition: 0.3s;
   }
   .address {
-    font-size: 1.8rem;
     justify-self: flex-start;
   }
   .menu-btn:hover {
@@ -230,7 +233,14 @@ footer {
     font-size: 2.2rem;
     padding-block: 1.4rem;
   }
+  .contact-grid {
+    justify-content: space-around;
+  }
   .address {
+    width: 12rem;
+  }
+  .address-email,
+  .phone {
     font-size: 2rem;
   }
   .email-label {
@@ -248,6 +258,10 @@ footer {
   }
   .log {
     font-size: 1.6rem;
+  }
+  .map {
+    width: 40rem;
+    height: 40rem;
   }
   .icon {
     width: 2rem;
