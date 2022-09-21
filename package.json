@@ -1,0 +1,11 @@
+{
+  "source": "src/index.html",
+  "browserslist": "> 5%",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
