@@ -1,3 +1,3 @@
 :root {
-  --bg-project: url("../img-projects/c-cover.jpg");
+  --bg-project: url(/src/img-projects/c-cover.jpg);
 }
