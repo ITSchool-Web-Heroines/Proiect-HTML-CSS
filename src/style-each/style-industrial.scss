@@ -1,7 +1,7 @@
 @use "../mixin.scss" as *;
 
 :root {
-  --bg-project: url("/src/img-projects/i-cover.jpg");
+  --bg-project: url("../img-projects/i-cover.jpg");
 }
 @media (min-width: 1024px) {
   section.intro-box {
