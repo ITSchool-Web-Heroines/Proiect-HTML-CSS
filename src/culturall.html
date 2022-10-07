@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>culturALL</title>
-    <link rel="stylesheet" href="../styleall.scss" />
-    <link rel="stylesheet" href="../style-each/style-all-projects.scss" />
-    <link rel="stylesheet" href="../style-each/style-culturall.scss" />
+    <link rel="stylesheet" href="styleall.css" />
+    <link rel="stylesheet" href="style-each/style-all-projects.css" />
+    <link rel="stylesheet" href="style-each/style-culturall.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -18,19 +18,40 @@
   </head>
   <body>
     <header class="logo-menu">
-      <a href="../index.html" class="logo-box">
-        <img src="../img/wlogo.png" alt="MMAtelier" class="logo" />
+      <a href="index.html" class="logo-box">
+        <img src="img/wlogo.png" alt="MMAtelier" class="logo" />
       </a>
       <nav class="menu-box">
         <ul class="menu">
           <li>
-            <a href="../index.html" class="menu-item">acasa</a>
+            <a href="index.html" class="menu-item">ACASĂ</a>
           </li>
           <li>
-            <a href="../projects.html" class="menu-item">PROIECTE</a>
+            <div
+              href="services.html"
+              class="menu-item"
+              tabindex="0"
+              style="cursor: pointer"
+            >
+              SERVICII
+            </div>
+            <ul class="sub-menu">
+              <li>
+                <a href="services.html#dde">Domenii de expertiză</a>
+              </li>
+              <li>
+                <a href="services.html#spg">Servicii proiectare generală</a>
+              </li>
+              <li>
+                <a href="services.html#ep">Etape proiect</a>
+              </li>
+              <li>
+                <a href="services.html#sd">Studii & Documentații</a>
+              </li>
+            </ul>
           </li>
           <li>
-            <a href="../contact.html" class="menu-item">CONTACT</a>
+            <a href="projects.html" class="menu-item">PROIECTE</a>
           </li>
         </ul>
       </nav>
@@ -42,9 +63,9 @@
     </div>
     <section class="intro-box">
       <h1 class="intro-title">culturALL</h1>
-      <img class="intro-logo" src="../img/1culturall.png" alt="Proiect Logo" />
+      <img class="intro-logo" src="img/1culturall.png" alt="Proiect Logo" />
       <div class="intro-info-box">
-        <p class="intro-info-title">CENTRU CULTURAL PENTRU TOȚI</p>
+        <p class="intro-info-title">CENTRU CULTURAL PENTRU TOTI</p>
         <p class="intro-info-subtitle">
           ROMÂNIA, BUCUREȘTI, STR. LIPSCANI, NR. 1
         </p>
@@ -59,11 +80,11 @@
     <main>
       <div class="content-box one">
         <p>CADRU ATMOSFERĂ</p>
-        <img src="../img-projects/c-2a.jpg" alt="Randare Proiect" />
+        <img src="img-projects/c-2a.jpg" alt="Randare Proiect" />
         <p class="switch-item">PERSPECTIVĂ PROMENADĂ SUSPENDATĂ</p>
-        <img src="../img-projects/c-2b.jpg" alt="Randare Proiect" />
+        <img src="img-projects/c-2b.jpg" alt="Randare Proiect" />
         <p>ZONĂ EXPOZIȚIE SUBTERANĂ</p>
-        <img src="../img-projects/c-2c.jpg" alt="Randare Proiect" />
+        <img src="img-projects/c-2c.jpg" alt="Randare Proiect" />
         <p class="content-subtext one">
           Arhitectura spațiului construit constă în legătura strânsă între
           interior și exterior.
@@ -71,7 +92,7 @@
       </div>
       <div class="content-box two">
         <p>RELAȚIA CU CLADIREA POMPIERILOR</p>
-        <img src="../img-projects/c-3a.jpg" alt="Randare Proiect" />
+        <img src="img-projects/c-3a.jpg" alt="Randare Proiect" />
         <p class="content-subtext two">
           Ansamblul arhitectural se desfășoară în relație directă cu
           construcțiile importante din sit: asimilează clădirea Detașamentului
@@ -79,11 +100,11 @@
           Primăria Municipiului și Memorialul Holocaustului.
         </p>
         <p>CORP NOU PROPUS</p>
-        <img src="../img-projects/c-3b.jpg" alt="Randare Proiect" />
+        <img src="img-projects/c-3b.jpg" alt="Randare Proiect" />
       </div>
       <div class="content-box three">
         <p>DIVERSIFICARE PERSPECTIVE</p>
-        <img src="../img-projects/c-4a.jpg" alt="Randare Proiect" />
+        <img src="img-projects/c-4a.jpg" alt="Randare Proiect" />
         <p class="content-subtext three">
           Acest complex se desfășoară suprateran prin camera urbană suținută de
           corpul atelierelor de creație, corpul administrativ și al redacției,
@@ -91,25 +112,48 @@
           se face conexiunea către zona subterană a centrului.
         </p>
         <p>ACCES MEMORIAL</p>
-        <img src="../img-projects/c-4b.jpg" alt="Randare Proiect" />
+        <img src="img-projects/c-4b.jpg" alt="Randare Proiect" />
       </div>
       <img
         class="plan-img"
-        src="../img-projects/c-plan.jpg"
+        src="img-projects/c-plan.jpg"
         alt="Randare Proiect"
       />
     </main>
     <footer class="footer-box">
       <div class="footer-content">
         <div class="sm-logo-footer footer-menu-item">
-          <img src="../img/blogo.png" alt="MMAtelier" class="logo-footer" />
+          <img src="img/blogo.png" alt="MMAtelier" class="logo-footer" />
+          <div class="social-media-footer">
+            <a href="#">
+              <img
+                src="sm-icon/bfb.png"
+                alt="Facebook Logo"
+                class="sm-icon-footer"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="sm-icon/binsta.png"
+                alt="Instagram Logo"
+                class="sm-icon-footer"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="sm-icon/blkin.png"
+                alt="Linkedin Logo"
+                class="sm-icon-footer"
+              />
+            </a>
+          </div>
         </div>
         <div class="list-footer list-menu-footer footer-menu-item">
           <h4>Meniu</h4>
           <ul class="menu-footer">
-            <li><a href="../index.html" class="footer-item">ACASA</a></li>
-            <li><a href="../projects.html" class="footer-item">PROIECTE</a></li>
-            <li><a href="../contact.html" class="footer-item">CONTACT</a></li>
+            <li><a href="index.html" class="footer-item">ACASĂ</a></li>
+            <li><a href="services.html" class="footer-item">SERVICII</a></li>
+            <li><a href="projects.html" class="footer-item">PROIECTE</a></li>
           </ul>
         </div>
         <div class="list-footer list-contact-footer footer-menu-item">
@@ -133,7 +177,7 @@
             <li>
               <i class="fa-solid fa-phone"></i>
               <a href="tel:+400780909080" class="footer-item">
-                +407 4642 5276
+                +4007 8090 9080
               </a>
             </li>
           </ul>
@@ -143,7 +187,7 @@
     </footer>
     <nav class="back-top">
       <a class="back-top-btn" href="#top">
-        <img src="../sm-icon/arrow.png" alt="Buton sageata sus" />
+        <img src="sm-icon/arrow.png" alt="Buton sageata sus" />
       </a>
     </nav>
   </body>

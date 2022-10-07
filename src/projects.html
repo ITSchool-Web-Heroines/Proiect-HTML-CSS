@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Proiecte</title>
-    <link rel="stylesheet" href="./styleall.scss" />
-    <link rel="stylesheet" href="./style-each/style-projects.scss" />
+    <link rel="stylesheet" href="styleall.css" />
+    <link rel="stylesheet" href="style-each/style-projects.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -23,13 +23,34 @@
       <nav class="menu-box">
         <ul class="menu">
           <li>
-            <a href="index.html" class="menu-item">ACASA</a>
+            <a href="index.html" class="menu-item">ACASĂ</a>
+          </li>
+          <li>
+            <div
+              href="services.html"
+              class="menu-item"
+              tabindex="0"
+              style="cursor: pointer"
+            >
+              SERVICII
+            </div>
+            <ul class="sub-menu">
+              <li>
+                <a href="services.html#dde">Domenii de expertiză</a>
+              </li>
+              <li>
+                <a href="services.html#spg">Servicii proiectare generală</a>
+              </li>
+              <li>
+                <a href="services.html#ep">Etape proiect</a>
+              </li>
+              <li>
+                <a href="services.html#sd">Studii & Documentații</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="projects.html" class="menu-item">PROIECTE</a>
-          </li>
-          <li>
-            <a href="contact.html" class="menu-item">CONTACT</a>
           </li>
         </ul>
       </nav>
@@ -49,51 +70,49 @@
           copyright="Elevation Watercolour, Saw Swee Hock Centre (London). Image © O'Donnell + Tuomey"
         />
       </div>
-      <p class="projects-head-title subtitle">
+      <p class="projects-head-title subtitle" style="font-weight: 900">
         MAI JOS PUTEȚI VEDEA PROIECTELE NOASTRE:
       </p>
-      <section class="project-tiles">
-        <div class="flip-card">
-          <div class="flip-card-all">
-            <div class="flip-card-front one">
-              <img class="tag" src="img/1culturall.png" alt="LogoProiect" />
-            </div>
-            <div class="flip-card-back one">
-              <a href="./projects/culturall.html">Culturall</a>
-            </div>
+      <div class="flip-card">
+        <div class="flip-card-all">
+          <div class="flip-card-front one">
+            <img class="tag" src="img/1culturall.png" alt="LogoProiect" />
+          </div>
+          <div class="flip-card-back one">
+            <a href="culturall.html">Culturall</a>
           </div>
         </div>
-        <div class="flip-card">
-          <div class="flip-card-all">
-            <div class="flip-card-front two">
-              <img class="tag" src="img/2sky.png" alt="LogoProiect" />
-            </div>
-            <div class="flip-card-back two">
-              <a href="./projects/skyscraper.html">Skyscraper</a>
-            </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-all">
+          <div class="flip-card-front two">
+            <img class="tag" src="img/2sky.png" alt="LogoProiect" />
+          </div>
+          <div class="flip-card-back two">
+            <a href="skyscraper.html">Skyscraper</a>
           </div>
         </div>
-        <div class="flip-card">
-          <div class="flip-card-all">
-            <div class="flip-card-front three">
-              <img class="tag" src="img/3hotel.png" alt="LogoProiect" />
-            </div>
-            <div class="flip-card-back three">
-              <a href="./projects/hotel.html">Hotel</a>
-            </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-all">
+          <div class="flip-card-front three">
+            <img class="tag" src="img/3hotel.png" alt="LogoProiect" />
+          </div>
+          <div class="flip-card-back three">
+            <a href="hotel.html">Hotel</a>
           </div>
         </div>
-        <div class="flip-card four">
-          <div class="flip-card-all">
-            <div class="flip-card-front four">
-              <img class="tag" src="img/4industrial.png" alt="LogoProiect" />
-            </div>
-            <div class="flip-card-back four">
-              <a href="./projects/industrial.html">Industrial</a>
-            </div>
+      </div>
+      <div class="flip-card four">
+        <div class="flip-card-all">
+          <div class="flip-card-front four">
+            <img class="tag" src="img/4industrial.png" alt="LogoProiect" />
+          </div>
+          <div class="flip-card-back four">
+            <a href="industrial.html">Industrial</a>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="footer-box">
       <div class="footer-content">
@@ -126,13 +145,13 @@
         <div class="list-footer list-menu-footer footer-menu-item">
           <h4>Meniu</h4>
           <ul class="menu-footer">
-            <li><a href="index.html" class="footer-item">ACASA</a></li>
+            <li><a href="index.html" class="footer-item">ACASĂ</a></li>
+            <li><a href="services.html" class="footer-item">SERVICII</a></li>
             <li><a href="projects.html" class="footer-item">PROIECTE</a></li>
-            <li><a href="contact.html" class="footer-item">CONTACT</a></li>
           </ul>
         </div>
         <div class="list-footer list-contact-footer footer-menu-item">
-          <h4>Contacteaza-ne:</h4>
+          <h4>Contactează-ne:</h4>
           <ul class="menu-footer">
             <li>
               <i class="fa-solid fa-location-dot"></i>
@@ -140,7 +159,7 @@
                 href="https://goo.gl/maps/suyTqdAA1SJrxPAV7"
                 class="footer-item"
               >
-                Bd. Regina Elisabeta 3, Bucuresti
+                Bd. Regina Elisabeta 3, București
               </a>
             </li>
             <li>
@@ -152,7 +171,7 @@
             <li>
               <i class="fa-solid fa-phone"></i>
               <a href="tel:+400780909080" class="footer-item">
-                +407 4642 5276
+                +4007 8090 9080
               </a>
             </li>
           </ul>

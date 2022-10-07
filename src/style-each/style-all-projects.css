@@ -1,5 +1,3 @@
-@use "../mixin.scss" as *;
-
 :root {
   --drop-shadow-logo: drop-shadow(0.07rem 0rem 0.08rem #000);
   --bg-color-logo-menu: transparent;
@@ -34,8 +32,12 @@ ul.menu > li > .menu-item {
   width: 100vw;
 }
 .banner-projects .title h1 {
-  @include font-details(#fff, "a-reg", 3rem, uppercase);
-  letter-spacing: 0.3rem;
+  font-family: "lemonmilk", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
   text-shadow: 0.1rem 0rem 0.08rem #000;
   opacity: 0;
   animation: ani-title 2s 1 forwards;
@@ -59,7 +61,7 @@ ul.menu > li > .menu-item {
   justify-items: center;
   width: 20rem;
   margin-inline: auto;
-  margin-block: 1rem;
+  margin-block: 0rem 1rem;
 }
 .intro-box,
 .content-box > p {
@@ -99,8 +101,9 @@ ul.menu > li > .menu-item {
   height: 18rem;
 }
 .intro-title {
-  @include font-details(#000, "a-reg", 2.5rem, none);
   font-size: 2.5rem;
+  font-family: "modern", sans-serif;
+  margin: 0;
 }
 .intro-info-box {
   display: flex;
@@ -109,22 +112,26 @@ ul.menu > li > .menu-item {
 }
 .intro-info-box p,
 .content-box > p {
-  @include font-details(#000, "bc-medium", 1.5rem, none);
   text-align: center;
+  font-size: 1.2rem;
+  font-family: "modern", sans-serif;
+  font-weight: 600;
+  margin: 0;
   padding: 0rem 1rem;
 }
 .intro-info-text {
-  @include font-details(#000, "bc-regular", 1.3rem, none);
+  font-size: 1.1rem;
   text-align: justify;
+  font-family: "modern", sans-serif;
   padding: 0.5rem 1rem;
+  margin: 0;
 }
 p.content-subtext.one,
 p.content-subtext.two,
 p.content-subtext.three {
-  @include font-details(#000, "bc-regular", 1.3rem, none);
-  text-align: justify;
-  padding: 0rem 1rem;
   animation: ani-text-img 2s ease-in 1 normal;
+  font-weight: 400;
+  font-size: 1rem;
 }
 .plan-img {
   width: 100vw;
@@ -158,9 +165,13 @@ main img {
 
 @media (min-width: 550px) {
   .banner-projects .title h1 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
-
+  p.content-subtext.one,
+  p.content-subtext.two,
+  p.content-subtext.three {
+    font-size: 1.2rem;
+  }
   .intro-box {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -246,7 +257,7 @@ main img {
 }
 @media (min-width: 1024px) {
   .banner-projects .title h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .intro-box {
     grid-template-columns: 1fr 1fr 1fr;
@@ -304,6 +315,7 @@ main img {
   p.content-subtext.one {
     grid-column: 1/4;
     grid-row: 3/4;
+    font-size: 1.2rem;
   }
   .switch-item {
     grid-column: 3/4;
@@ -330,7 +342,7 @@ main img {
   p.content-subtext.three {
     padding: 0rem 0.5rem;
     padding-block-start: 3rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 13rem;
     text-align: justify;
   }
@@ -340,16 +352,19 @@ main img {
     font-size: 4rem;
   }
 }
-@media (max-height: 500px) {
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
   .banner-projects .title h1 {
     font-size: 2rem;
     margin-top: 4.5rem;
   }
   .menu > li > .menu-item {
     padding: 1rem 0;
+    margin: 0;
     font-size: 1rem;
   }
-
+  .sub-menu li a {
+    font-size: 0.8rem;
+  }
   .intro-title {
     font-size: 2rem;
     font-weight: 400;

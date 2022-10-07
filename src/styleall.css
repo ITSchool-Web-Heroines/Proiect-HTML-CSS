@@ -1,18 +1,12 @@
-@use "./mixin.scss" as *;
-
 body {
   margin: 0;
   padding: 0;
   scrollbar-color: #cccccc transparent;
   overflow-y: scroll;
   overflow-x: hidden;
-  * {
-    margin: 0;
-    padding: 0;
-  }
 }
 body::-webkit-scrollbar {
-  width: 0.2rem;
+  width: 0.1rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -22,45 +16,14 @@ body::-webkit-scrollbar-thumb {
   background-color: #cccccc;
 }
 @font-face {
-  font-family: a-reg;
-  src: url("./font/agency-regular.woff") format("woff"),
-    url("./font/agency-regular.TTF") format("truetype");
+  font-family: lemonmilk;
+  src: url("font/LemonMilk.woff") format("webopenfontformat"),
+    url("font/LemonMilk.ttf") format("truetype");
 }
 @font-face {
-  font-family: bc-bold;
-  src: url("./font/BarlowCondensed-Bold.woff") format("woff"),
-    url("./font/BarlowCondensed-Bold.ttf") format("truetype");
-  font-weight: 700;
-}
-@font-face {
-  font-family: bc-bold;
-  src: url("./font/BarlowCondensed-Bold.woff") format("woff"),
-    url("./font/BarlowCondensed-Bold.ttf") format("truetype");
-  font-weight: 700;
-}
-@font-face {
-  font-family: bc-medium;
-  src: url("./font/BarlowCondensed-Medium.woff") format("woff"),
-    url("./font/BarlowCondensed-Medium.ttf") format("truetype");
-  font-weight: 500;
-}
-@font-face {
-  font-family: bc-regular;
-  src: url("./font/BarlowCondensed-Regular.woff") format("woff"),
-    url("./font/BarlowCondensed-Regular.ttf") format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: bc-light;
-  src: url("./font/BarlowCondensed-Light.woff") format("woff"),
-    url("./font/BarlowCondensed-Light.ttf") format("truetype");
-  font-weight: 300;
-}
-@font-face {
-  font-family: bc-thin;
-  src: url("./font/BarlowCondensed-Thin.woff") format("woff"),
-    url("./font/BarlowCondensed-Thin.ttf") format("truetype");
-  font-weight: 100;
+  font-family: modern;
+  src: url("font/Modern.woff") format("webopenfontformat"),
+    url("font/Modern.ttf") format("truetype");
 }
 /* Main Menu */
 .logo-menu {
@@ -87,24 +50,32 @@ body::-webkit-scrollbar-thumb {
   filter: var(--drop-shadow-logo);
 }
 /* Menu */
+.menu * {
+  margin: 0;
+  padding: 0;
+}
 .menu-box {
   background: var(--bg-color-logo-menu);
 }
 .menu-box ul {
   list-style: none;
+  padding-inline: 0;
 }
 .menu {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
+  margin-block-start: -0.5rem;
+  margin-block-end: 0rem;
 }
 .menu > li > .menu-item {
   display: block;
-  padding: 0.8rem 0;
-  @include font-details(var(--color-menu-item), "a-reg", 1.4rem, uppercase);
-  font-weight: 500;
-  text-decoration: none;
+  padding: 0.9rem 0;
+  font-family: "lemonmilk", sans-serif;
+  font-size: 1rem;
+  color: var(--color-menu-item);
   text-shadow: 0.065rem 0rem 0.08rem var(--text-shadow-menu-item);
+  text-decoration: none;
   transition-property: transform, text-shadow;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
@@ -112,6 +83,47 @@ body::-webkit-scrollbar-thumb {
 .menu li .menu-item:hover {
   transform: scale(120%);
   text-shadow: 0.1rem 0rem 0.1rem var(--text-shadow-menu-item);
+}
+/* Submenu */
+.sub-menu {
+  position: absolute;
+  background: #fff;
+  box-shadow: var(--box-shadow-submenu);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 500ms;
+  width: 7rem;
+  transform: translateX(-1.2rem);
+}
+.menu li:hover .sub-menu,
+.menu ul.sub-menu:hover {
+  visibility: visible;
+  opacity: 1;
+  z-index: 5;
+}
+.menu li:focus .sub-menu,
+.menu li:focus-within .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 5;
+}
+.sub-menu li a {
+  display: block;
+  padding: 0.25rem;
+  font-family: "modern", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: inset 0rem -0.7rem 0rem -0.6rem rgb(231, 231, 231);
+  transition-property: box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
+.sub-menu li a:hover {
+  box-shadow: inset 0rem -0.7rem 0rem -0.6rem #ccc;
 }
 /* Footer */
 .footer-box {
@@ -152,13 +164,17 @@ div.footer-menu-item {
   height: auto;
 }
 .list-footer h4 {
-  @include font-details(#000, "a-reg", 1.2rem, uppercase);
+  font-family: "lemonmilk", sans-serif;
+  margin: 0;
+  font-size: 1rem;
 }
 .menu-footer .footer-item,
 .copyright {
-  @include font-details(#000, "a-reg", 1.15rem, none);
+  font-family: "modern", sans-serif;
   text-decoration: none;
+  color: #000;
   font-size: 1rem;
+  margin: 0;
 }
 .menu-footer li {
   list-style: none;
@@ -189,6 +205,7 @@ p.copyright {
 .back-top {
   width: 3rem;
   height: 3rem;
+  margin: 0;
   position: fixed;
   inset-block-end: 1%;
   inset-inline-end: 3%;
@@ -205,14 +222,7 @@ p.copyright {
 }
 @media (min-width: 550px) {
   .menu > li > .menu-item {
-    font-size: 1.5rem;
-  }
-  .menu-footer .footer-item,
-  .copyright {
     font-size: 1.2rem;
-  }
-  .list-footer h4 {
-    font-size: 1.25rem;
   }
 }
 @media (min-width: 800px) {
@@ -235,7 +245,13 @@ p.copyright {
     margin-block: 0.5rem 0rem;
   }
   .menu > li > .menu-item {
-    font-size: 1.55rem;
+    padding: 1.95rem 0;
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  .sub-menu {
+    width: 8rem;
+    top: 5.75rem;
   }
   .footer-content {
     flex-direction: row;
@@ -262,18 +278,5 @@ p.copyright {
 @media (min-width: 1024px) {
   .footer-content {
     justify-content: space-evenly;
-  }
-}
-
-@media (max-height: 500px) {
-  .logo {
-    width: 4rem;
-  }
-  .banner .title h1 {
-    font-size: 2rem;
-    margin-top: 4.5rem;
-  }
-  .menu > li > .menu-item {
-    font-size: 1.2rem;
   }
 }

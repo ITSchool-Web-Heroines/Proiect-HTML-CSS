@@ -1,5 +1,3 @@
-@use "../mixin.scss" as *;
-
 :root {
   --drop-shadow-logo: drop-shadow(0.07rem 0rem 0.08rem #000);
   --bg-color-logo-menu: transparent;
@@ -7,6 +5,7 @@
   --position-logo-menu: absolute;
   --color-menu-item: #fff;
   --text-shadow-menu-item: #000;
+  --box-shadow-submenu: 0rem 0.3rem 0.5rem 0rem #fff;
 }
 
 /* Video Banner */
@@ -36,8 +35,12 @@
   width: 80vw;
 }
 .banner .title h1 {
-  @include font-details(#fff, "a-reg", 3rem, uppercase);
-  letter-spacing: 0.3rem;
+  font-family: "lemonmilk", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  color: #fff;
   text-shadow: 0.1rem 0rem 0.08rem #000;
 }
 .banner .social-media {
@@ -86,7 +89,8 @@
 }
 h2.subtitle,
 h2.services-subtitle {
-  @include font-details(#000, "bc-regular", 1.5rem, none);
+  font-family: "modern", sans-serif;
+  font-size: 1.5rem;
   text-align: center;
 }
 h2.subtitle {
@@ -102,7 +106,9 @@ h2.services-subtitle {
 p.subtext,
 p.content-text,
 p.project-text {
-  @include font-details(#000, "bc-regular", 1.2rem, none);
+  font-family: "modern", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
   margin: 0rem;
   padding: 0.5rem;
   text-align: center;
@@ -114,12 +120,16 @@ p.project-text {
 }
 .btn-services,
 .btn-projects {
-  @include font-details(#000, "bc-medium", 1.2rem, uppercase);
-  text-decoration: none;
+  font-family: "modern", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
   background: transparent;
   padding: 0.5rem;
   margin: 0.5rem;
   border: 0.05rem solid #000;
+  text-decoration: none;
+  text-transform: uppercase;
   transition-property: transform, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
@@ -140,7 +150,9 @@ a.btn-projects {
   transform: scale(120%);
 }
 h2.content-title {
-  @include font-details(#000, "a-reg", 1.5rem, uppercase);
+  margin-block: 0.5rem;
+  font-family: "lemonmilk", sans-serif;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 img.project-plan {
@@ -207,7 +219,7 @@ section.projects-box {
     width: 95vw;
   }
   .banner .title h1 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
   main.content-box {
     flex-direction: row;
@@ -243,6 +255,7 @@ section.projects-box {
   }
   .btn-services,
   .btn-projects {
+    font-size: 1rem;
     padding: 0.8rem;
     margin: 0.8rem;
   }
@@ -286,5 +299,22 @@ section.projects-box {
   .subtitle-image {
     width: 55vw;
     max-width: 30rem;
+  }
+}
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+  .banner .title h1 {
+    font-size: 1.2rem;
+    margin-top: 4.5rem;
+  }
+  .menu > li > .menu-item {
+    padding: 1rem 0;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .sub-menu li a {
+    font-size: 0.8rem;
+  }
+  .sm-icon {
+    width: 1rem;
   }
 }
