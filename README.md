@@ -1,14 +1,14 @@
-# Proiect HTML+CSS
-Acesta este un repo la care vreau să faceți Pull Request cu proiectul vostru în HTML și CSS.
+This website is a platform created to showcase a wide variety of tourist destinations. It was bulit using HTML and CSS and it has been designed to be fully responsive, ensuring that it can be easily accessed and navigated on any device.
 
-**Cum faci**
-1. Faci fork 
-2. Adaugi fișierele în proiect
-3. Faci commit-uri atât cât ai nevoie
-4. Faci push pe Repo-ul tău
-5. Intri la Pull Requests, apeși [`New Pull Request`](https://github.com/ITSchool-Web-Heroines/Proiect-HTML-CSS/compare)
-6. în dreapta, alegi repo-ul tău și branch-ul tău
-7. în stânga, alegi `ITSchool-Web-Heroines/Proiect-HTML-CSS` și branch-ul `master`
-8. Apeși `Create pull request`
-9. Pui în titlu numele tău, și dacă e nevoie de ceva detalii la comentarii.
-10. Apeși `Create pull request`
+I have attached some pictures below to give you a glimpse of the content and design of my website.
+( If you want to see more, you can access the website on https://bie24.github.io/Proiect-HTML-CSS/ )
+
+![s1](https://user-images.githubusercontent.com/32037529/212144048-556a4781-c522-4290-ad06-92d85872860f.jpg)
+![s2](https://user-images.githubusercontent.com/32037529/212144054-e9cea101-6257-455b-b850-24ef914103a9.jpg)
+![s3](https://user-images.githubusercontent.com/32037529/212144060-891a5eab-7a45-436e-98b9-37e3a35b62fb.jpg)
+![s4](https://user-images.githubusercontent.com/32037529/212144069-253f16f8-29a9-4d7b-9534-ed10fb973615.jpg)
+Mobile dimensions:
+
+
+![s5](https://user-images.githubusercontent.com/32037529/212144073-a9cff265-0b6d-442b-aafe-58ddc21d2c25.jpg)
+![s6](https://user-images.githubusercontent.com/32037529/212144077-f3ed3758-90c9-4e23-9c05-d0d6b484bffa.jpg)
